@@ -25,5 +25,7 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
         <virtualFileSystem id="svirtual" implementationClass="net.prestalife.svirtual.SvirtualFileSystem"/>
+<!--        <treeStructureProvider implementation=""-->
+        <projectViewNestingRulesProvider implementation="net.prestalife.svirtual.SvirtualProjectViewNestingRulesProvider"/>
     </extensions>
 </idea-plugin>
