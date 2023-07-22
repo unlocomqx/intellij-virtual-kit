@@ -16,7 +16,7 @@ class SvirtualFileSystem : com.intellij.openapi.vfs.newvfs.NewVirtualFileSystem(
                 VirtualFileManager.getInstance().getFileSystem(PROTOCOL) as SvirtualFileSystem
     }
 
-    override fun getProtocol() = AAAASvirtualFileSystem.PROTOCOL
+    override fun getProtocol() = PROTOCOL
 
     override fun findFileByPath(path: String): VirtualFile? {
         return VfsImplUtil.findFileByPathIfCached(this, path)
@@ -73,11 +73,11 @@ class SvirtualFileSystem : com.intellij.openapi.vfs.newvfs.NewVirtualFileSystem(
     }
 
     override fun contentsToByteArray(file: VirtualFile): ByteArray {
-        val stream = file.inputStream!!
+        val stream = file.inputStream
         return FileUtil.loadBytes(stream, file.length.toInt())
     }
 
-    override fun getInputStream(file: VirtualFile) = file.inputStream!!
+    override fun getInputStream(file: VirtualFile) = file.inputStream
 
     override fun getOutputStream(
         file: VirtualFile,
