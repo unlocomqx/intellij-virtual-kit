@@ -27,6 +27,6 @@
         <virtualFileSystem id="svirtual" implementationClass="net.prestalife.svirtual.SvirtualFileSystem"/>
         <projectViewNestingRulesProvider implementation="net.prestalife.svirtual.SvirtualProjectViewNestingRulesProvider"/>
         <projectViewNodeDecorator implementation="net.prestalife.svirtual.SvirtualProjectViewNodeDecorator"/>
-
+<editorTabTitleProvider implementation="net.prestalife.svirtual.SvirtualEditorTabTitleProvider"/>
     </extensions>
 </idea-plugin>
