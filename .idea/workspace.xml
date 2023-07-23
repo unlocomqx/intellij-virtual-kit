@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Remove comment">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualEditorTabTitleProvider.kt" afterDir="false" />
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Add SvirtualFileIconProvider">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -301,7 +301,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690085549465</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add SvirtualEditorTabTitleProvider">
+      <option name="closed" value="true" />
+      <created>1690085927499</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690085927499</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add SvirtualFileIconProvider">
+      <option name="closed" value="true" />
+      <created>1690086166586</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1690086166586</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -321,7 +337,9 @@
     <MESSAGE value="Remove unused" />
     <MESSAGE value="Save workspace" />
     <MESSAGE value="Remove comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove comment" />
+    <MESSAGE value="Add SvirtualEditorTabTitleProvider" />
+    <MESSAGE value="Add SvirtualFileIconProvider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SvirtualFileIconProvider" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
