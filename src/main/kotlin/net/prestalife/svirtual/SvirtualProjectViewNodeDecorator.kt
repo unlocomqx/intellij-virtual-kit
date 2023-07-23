@@ -4,9 +4,15 @@ import com.intellij.ide.projectView.PresentationData
 import com.intellij.ide.projectView.ProjectViewNode
 import com.intellij.ide.projectView.ProjectViewNodeDecorator
 import com.intellij.ide.projectView.impl.nodes.NestingTreeNode
+import net.prestalife.svirtual.settings.AppSettingsState
 
 class SvirtualProjectViewNodeDecorator : ProjectViewNodeDecorator {
     override fun decorate(node: ProjectViewNode<*>, presentation: PresentationData) {
+        val settings = AppSettingsState.instance
+        if (!settings.modifyProjectTree) {
+            return
+        }
+
         val name = node.virtualFile?.name ?: return
 
         if (name == "+page.svelte") {

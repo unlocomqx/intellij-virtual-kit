@@ -22,6 +22,8 @@ import org.jetbrains.annotations.Nullable
 class AppSettingsState : PersistentStateComponent<AppSettingsState> {
     var nestRouteFiles = true
     var modifyProjectTree = true
+    var modifyFileIcons = true
+    var modifyTabsTitles = true
 
     @Nullable
     override fun getState(): AppSettingsState {
