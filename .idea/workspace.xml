@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Display svelte page icon" />
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Add icons">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SveltePageServerNode.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/server.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/Icons.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SveltePageNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SveltePageNode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualTreeStructureProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualTreeStructureProvider.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,6 +116,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/icons" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="net.prestalife.svirtual" />
@@ -217,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690074918603</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add icons">
+      <option name="closed" value="true" />
+      <created>1690081600166</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690081600166</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,7 +244,8 @@
     <MESSAGE value="Modify tree" />
     <MESSAGE value="Change name of +page.svelte file" />
     <MESSAGE value="Display svelte page icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Display svelte page icon" />
+    <MESSAGE value="Add icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add icons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

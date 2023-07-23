@@ -3,7 +3,7 @@ package net.prestalife.svirtual
 import com.intellij.ide.projectView.PresentationData
 import com.intellij.ide.projectView.impl.nodes.PsiFileNode
 
-class SveltePageNode(
+class SveltePageServerNode(
     route: String,
     psiFileNode: PsiFileNode,
     viewSettings: com.intellij.ide.projectView.ViewSettings?
@@ -17,7 +17,7 @@ class SveltePageNode(
     }
 
     override fun updateImpl(data: PresentationData) {
-        data.presentableText = "$route.svelte"
-        data.setIcon(Icons.Page)
+        data.presentableText = "$route.server.js"
+        data.setIcon(Icons.Server)
     }
 }

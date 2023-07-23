@@ -32,6 +32,11 @@ class SvirtualTreeStructureProvider : TreeStructureProvider {
                 result.add(SveltePageNode(route, child, parent.settings))
                 continue
             }
+
+            if (child.virtualFile?.name == "+page.server.ts") {
+                result.add(SveltePageServerNode(route, child, parent.settings))
+                continue
+            }
             result.add(child)
         }
         return result
