@@ -28,5 +28,6 @@
 <!--        <treeStructureProvider implementation=""-->
         <projectViewNestingRulesProvider implementation="net.prestalife.svirtual.SvirtualProjectViewNestingRulesProvider"/>
         <treeStructureProvider implementation="net.prestalife.svirtual.SvirtualTreeStructureProvider"/>
+        <projectViewNodeDecorator implementation="net.prestalife.svirtual.SvirtualProjectViewNodeDecorator"/>
     </extensions>
 </idea-plugin>

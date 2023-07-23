@@ -2,6 +2,7 @@ package net.prestalife.svirtual
 
 import com.intellij.ide.projectView.PresentationData
 import com.intellij.ide.projectView.impl.nodes.PsiFileNode
+import com.intellij.openapi.vfs.VirtualFile
 
 class SveltePageNode(
     route: String,

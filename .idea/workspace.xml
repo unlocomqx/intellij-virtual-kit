@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Remove comment">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SveltePageScriptNode.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/page-js.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/page-ts.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/Icons.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/Icons.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualTreeStructureProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualTreeStructureProvider.kt" afterDir="false" />
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Update workspace">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualProjectViewNodeDecorator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SveltePageNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SveltePageNode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualProjectViewNestingRulesProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualProjectViewNestingRulesProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690082802975</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add SveltePageScriptNode">
+      <option name="closed" value="true" />
+      <created>1690083527923</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690083527923</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update workspace">
+      <option name="closed" value="true" />
+      <created>1690083544505</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690083544505</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -263,7 +279,9 @@
     <MESSAGE value="Add icons" />
     <MESSAGE value="Add SveltePageServerNode" />
     <MESSAGE value="Remove comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove comment" />
+    <MESSAGE value="Add SveltePageScriptNode" />
+    <MESSAGE value="Update workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workspace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
