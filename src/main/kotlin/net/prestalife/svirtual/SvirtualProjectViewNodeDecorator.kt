@@ -1,4 +1,4 @@
-package net.prestalife.svirtual;
+package net.prestalife.svirtual
 
 import com.intellij.ide.projectView.PresentationData
 import com.intellij.ide.projectView.ProjectViewNode
@@ -12,7 +12,7 @@ class SvirtualProjectViewNodeDecorator : ProjectViewNodeDecorator {
         if (name == "+page.svelte") {
             val route = getRoute(node)
             presentation.presentableText = "$route.svelte"
-            presentation.setIcon(Icons.Page);
+            presentation.setIcon(Icons.Page)
             return
         }
 
@@ -20,7 +20,7 @@ class SvirtualProjectViewNodeDecorator : ProjectViewNodeDecorator {
         if (name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
             val route = getRoute(node)
             presentation.presentableText = "$route.server.ts"
-            presentation.setIcon(Icons.Server);
+            presentation.setIcon(Icons.Server)
         }
 
         if (name.matches(Regex("\\+page\\.(ts|js)"))) {
