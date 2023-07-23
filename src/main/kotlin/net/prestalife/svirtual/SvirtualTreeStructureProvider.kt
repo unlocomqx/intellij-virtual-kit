@@ -1,11 +1,11 @@
 package net.prestalife.svirtual;
 
+import com.intellij.ide.projectView.ProjectViewNode
 import com.intellij.ide.projectView.TreeStructureProvider
 import com.intellij.ide.projectView.ViewSettings
 import com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode
 import com.intellij.ide.projectView.impl.nodes.PsiFileNode
 import com.intellij.ide.util.treeView.AbstractTreeNode
-import java.util.ArrayList
 
 class SvirtualTreeStructureProvider : TreeStructureProvider {
     override fun modify(
@@ -19,7 +19,7 @@ class SvirtualTreeStructureProvider : TreeStructureProvider {
         }
 
         val result = ArrayList<AbstractTreeNode<*>>()
-        val route = if (parent.name=="routes") "index" else parent.name
+        val route = (if (parent.name == "routes") "index" else parent.name) ?: return children
 
         for (child in children) {
             // check if child is instance of PsiFileNode
@@ -29,12 +29,11 @@ class SvirtualTreeStructureProvider : TreeStructureProvider {
             }
 
             if (child.virtualFile?.name == "+page.svelte") {
-//                    result.add(child)
+                result.add(SveltePageNode(route, child, parent.settings))
                 continue
             }
             result.add(child)
         }
         return result
     }
-
 }
