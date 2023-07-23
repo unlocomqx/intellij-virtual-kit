@@ -22,7 +22,6 @@ class SvirtualTreeStructureProvider : TreeStructureProvider {
         val route = (if (parent.name == "routes") "index" else parent.name) ?: return children
 
         for (child in children) {
-            // check if child is instance of PsiFileNode
             if (child !is PsiFileNode) {
                 result.add(child)
                 continue
