@@ -27,15 +27,24 @@ class SvirtualTreeStructureProvider : TreeStructureProvider {
                 continue
             }
 
-            if (child.virtualFile?.name == "+page.svelte") {
+            val filename = child.virtualFile?.name
+
+            if (filename == "+page.svelte") {
                 result.add(SveltePageNode(route, child, parent.settings))
                 continue
             }
 
-            if (child.virtualFile?.name == "+page.server.ts") {
+            // check if filename matches +page.server.ts using regex
+            if (filename?.matches(Regex("\\+page\\.server\\.(ts|js)")) == true) {
                 result.add(SveltePageServerNode(route, child, parent.settings))
                 continue
             }
+
+            if (filename?.matches(Regex("\\+page\\.(ts|js)")) == true) {
+                result.add(SveltePageScriptNode(route, child, parent.settings))
+                continue
+            }
+
             result.add(child)
         }
         return result
