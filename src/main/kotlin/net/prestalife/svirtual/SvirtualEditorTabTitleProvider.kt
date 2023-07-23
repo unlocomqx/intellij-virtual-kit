@@ -6,7 +6,7 @@ import com.intellij.openapi.vfs.VirtualFile
 
 class SvirtualEditorTabTitleProvider : EditorTabTitleProvider {
     override fun getEditorTabTitle(project: Project, file: VirtualFile): String? {
-        val route = getRoute(file) ?: return null
+        val route = getRoute(file)
 
         if (file.name == "+page.svelte") {
             return "$route.svelte"
@@ -32,6 +32,6 @@ class SvirtualEditorTabTitleProvider : EditorTabTitleProvider {
             return "index"
         }
 
-        return parent.name ?: return ""
+        return parent.name
     }
 }

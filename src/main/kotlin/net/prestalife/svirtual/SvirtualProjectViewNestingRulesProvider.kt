@@ -1,6 +1,6 @@
-package net.prestalife.svirtual;
+package net.prestalife.svirtual
 
-import com.intellij.ide.projectView.ProjectViewNestingRulesProvider;
+import com.intellij.ide.projectView.ProjectViewNestingRulesProvider
 
 class SvirtualProjectViewNestingRulesProvider : ProjectViewNestingRulesProvider {
     override fun addFileNestingRules(consumer: ProjectViewNestingRulesProvider.Consumer) {
