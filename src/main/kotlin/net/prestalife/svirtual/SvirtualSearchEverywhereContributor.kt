@@ -1,9 +1,9 @@
 package net.prestalife.svirtual
 
-import com.intellij.ide.actions.searcheverywhere.FileSearchEverywhereContributor
-import com.intellij.ide.actions.searcheverywhere.FoundItemDescriptor
-import com.intellij.ide.actions.searcheverywhere.SearchEverywhereContributor
-import com.intellij.ide.actions.searcheverywhere.SearchEverywhereContributorFactory
+import com.intellij.ide.IdeBundle
+import com.intellij.ide.actions.searcheverywhere.*
+import com.intellij.ide.actions.searcheverywhere.SearchEverywhereFiltersStatisticsCollector.FileTypeFilterCollector
+import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.progress.ProgressIndicator
 import com.intellij.openapi.progress.util.ProgressIndicatorUtils
@@ -13,6 +13,12 @@ import com.intellij.util.containers.ContainerUtil
 import org.jetbrains.annotations.NotNull
 
 class SvirtualSearchEverywhereContributor(@NotNull event: AnActionEvent) : FileSearchEverywhereContributor(event) {
+
+    private val myFilter = createFileTypeFilter(this.myProject);
+
+    override fun fetchElements(pattern: String, progressIndicator: ProgressIndicator, consumer: Processor<in Any>) {
+        super.fetchElements(pattern, progressIndicator, consumer)
+    }
 
     override fun fetchWeightedElements(
         rawPattern: String, progressIndicator: ProgressIndicator, consumer: Processor<in FoundItemDescriptor<Any>>
@@ -29,8 +35,12 @@ class SvirtualSearchEverywhereContributor(@NotNull event: AnActionEvent) : FileS
         }, progressIndicator)
     }
 
+    override fun getActions(onChanged: Runnable): List<AnAction?> {
+        return doGetActions(myFilter, FileTypeFilterCollector(), onChanged)
+    }
+
     override fun getGroupName(): String {
-        return "Svirtual"
+        return IdeBundle.message("search.everywhere.group.name.files")
     }
 
     override fun getSortWeight(): Int {
@@ -39,7 +49,7 @@ class SvirtualSearchEverywhereContributor(@NotNull event: AnActionEvent) : FileS
 
     class Factory : SearchEverywhereContributorFactory<Any> {
         override fun createContributor(initEvent: AnActionEvent): SearchEverywhereContributor<Any> {
-            return SvirtualSearchEverywhereContributor(initEvent)
+            return PSIPresentationBgRendererWrapper.wrapIfNecessary(SvirtualSearchEverywhereContributor(initEvent))
         }
     }
 }
