@@ -3,6 +3,8 @@ package net.prestalife.svirtual
 import com.intellij.openapi.fileEditor.impl.EditorTabTitleProvider
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
+import com.jetbrains.rd.util.addUnique
+import net.prestalife.svirtual.data.TouchedFiles
 import net.prestalife.svirtual.settings.AppSettingsState
 
 class SvirtualEditorTabTitleProvider : EditorTabTitleProvider {
@@ -15,15 +17,18 @@ class SvirtualEditorTabTitleProvider : EditorTabTitleProvider {
         val route = getRoute(file)
 
         if (file.name == "+page.svelte") {
+            TouchedFiles.list.add(file)
             return "$route.svelte"
         }
 
         // check if filename matches +page.server.ts using regex
         if (file.name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
+            TouchedFiles.list.add(file)
             return "$route.server.ts"
         }
 
         if (file.name.matches(Regex("\\+page\\.(ts|js)"))) {
+            TouchedFiles.list.add(file)
             val extension = file.extension
             return "$route.$extension"
         }

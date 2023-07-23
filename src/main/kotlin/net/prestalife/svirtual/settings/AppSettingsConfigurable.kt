@@ -1,6 +1,11 @@
 package net.prestalife.svirtual.settings;
 
+import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.options.Configurable
+import com.intellij.openapi.project.ProjectManager
+import com.intellij.openapi.roots.ProjectRootManager
+import com.intellij.openapi.vfs.VfsUtil
+import com.intellij.openapi.vfs.VirtualFileManager
 import com.intellij.ui.components.JBCheckBox
 import com.intellij.util.ui.FormBuilder
 import org.jetbrains.annotations.Nls
@@ -14,6 +19,7 @@ import javax.swing.JPanel
  * Provides controller functionality for application settings.
  */
 class AppSettingsConfigurable : Configurable {
+
     private var mySettingsComponent: AppSettingsComponent? = null
 
     // A default constructor with no arguments is required because this implementation
@@ -46,6 +52,16 @@ class AppSettingsConfigurable : Configurable {
         settings.modifyProjectTree = mySettingsComponent!!.modifyProjectTree
         settings.modifyFileIcons = mySettingsComponent!!.modifyFileIcons
         settings.modifyTabsTitles = mySettingsComponent!!.modifyTabsTitles
+        ProjectManager.getInstance().openProjects.forEach { project ->
+            ApplicationManager.getApplication().runWriteAction {
+                VirtualFileManager.getInstance().asyncRefresh {
+                    ProjectRootManager.getInstance(project).contentRoots.forEach { root ->
+                        VfsUtil.markDirtyAndRefresh(false, true, true, root)
+                    }
+                }
+            }
+        }
+
     }
 
     override fun reset() {
