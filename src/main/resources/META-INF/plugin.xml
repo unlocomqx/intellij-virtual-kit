@@ -31,5 +31,13 @@
         <editorTabTitleProvider implementation="net.prestalife.svirtual.SvirtualEditorTabTitleProvider"/>
         <fileIconProvider implementation="net.prestalife.svirtual.SvirtualFileIconProvider"/>
         <searchEverywhereContributor implementation="net.prestalife.svirtual.SvirtualSearchEverywhereContributor$Factory"/>
+
+        <applicationService
+                serviceImplementation="net.prestalife.svirtual.settings.AppSettingsState"/>
+        <applicationConfigurable
+                parentId="tools"
+                instance="net.prestalife.svirtual.settings.AppSettingsConfigurable"
+                id="net.prestalife.svirtual.settings.AppSettingsConfigurable"
+                displayName="VirtualKit Settings"/>
     </extensions>
 </idea-plugin>
