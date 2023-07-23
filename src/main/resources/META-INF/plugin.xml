@@ -30,5 +30,6 @@
         <projectViewNodeDecorator implementation="net.prestalife.svirtual.SvirtualProjectViewNodeDecorator"/>
         <editorTabTitleProvider implementation="net.prestalife.svirtual.SvirtualEditorTabTitleProvider"/>
         <fileIconProvider implementation="net.prestalife.svirtual.SvirtualFileIconProvider"/>
+        <searchEverywhereContributor implementation="net.prestalife.svirtual.SvirtualSearchEverywhereContributor$Factory"/>
     </extensions>
 </idea-plugin>

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Save workspace">
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Refactor">
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualSearchEverywhereContributor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
@@ -326,13 +326,28 @@
       <option name="project" value="LOCAL" />
       <updated>1690086601344</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Save workspace">
+      <option name="closed" value="true" />
+      <created>1690087463513</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1690087463513</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Refactor">
+      <option name="closed" value="true" />
+      <created>1690087500669</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1690087500669</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Extend NewVirtualFileSystem" />
-    <MESSAGE value="Refactor" />
     <MESSAGE value="Nest sveltekit files" />
     <MESSAGE value="Modify tree" />
     <MESSAGE value="Change name of +page.svelte file" />
@@ -348,7 +363,8 @@
     <MESSAGE value="Add SvirtualEditorTabTitleProvider" />
     <MESSAGE value="Add SvirtualFileIconProvider" />
     <MESSAGE value="Save workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save workspace" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -365,18 +381,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualSearchEverywhereContributor.kt</url>
-          <line>52</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualSearchEverywhereContributor.kt</url>
-          <line>36</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualSearchEverywhereContributor.kt</url>
-          <line>13</line>
-          <option name="timeStamp" value="24" />
+          <line>19</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
