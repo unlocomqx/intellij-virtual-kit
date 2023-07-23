@@ -19,7 +19,7 @@ class SveltePageNode(
         )
     }
 
-    val pageIcon: Icon = load("icons/page.svg", -938751982, 0)
+    private val pageIcon: Icon = load("icons/page.svg", -938751982, 0)
     private var route: String
 
     init {
