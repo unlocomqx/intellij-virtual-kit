@@ -83,24 +83,24 @@ class AppSettingsComponent {
     @get:NotNull
     var nestRouteFiles: Boolean
         get() = nestRouteFilesCheckbox.isSelected
-        set(state: Boolean) {
+        set(state) {
             nestRouteFilesCheckbox.isSelected = state
         }
     var modifyProjectTree: Boolean
         get() = modifyProjectTreeCheckbox.isSelected
-        set(state: Boolean) {
+        set(state) {
             modifyProjectTreeCheckbox.isSelected = state
         }
 
     var modifyFileIcons: Boolean
         get() = modifyFileIconsCheckbox.isSelected
-        set(state: Boolean) {
+        set(state) {
             modifyFileIconsCheckbox.isSelected = state
         }
 
     var modifyTabsTitles: Boolean
         get() = modifyTabsTitlesCheckbox.isSelected
-        set(state: Boolean) {
+        set(state) {
             modifyTabsTitlesCheckbox.isSelected = state
         }
 }
