@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Rename variables">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Add goto file feature topic">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/settings/AppSettingsConfigurable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/settings/AppSettingsConfigurable.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -482,11 +481,18 @@
       <option name="project" value="LOCAL" />
       <updated>1690216351650</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Add goto file feature topic">
+      <option name="closed" value="true" />
+      <created>1690216727762</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1690216727762</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change name of +page.svelte file" />
     <MESSAGE value="Display svelte page icon" />
     <MESSAGE value="Add icons" />
     <MESSAGE value="Add SveltePageServerNode" />
@@ -511,7 +517,8 @@
     <MESSAGE value="Remove search contributor" />
     <MESSAGE value="Add file search" />
     <MESSAGE value="Rename variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename variables" />
+    <MESSAGE value="Add goto file feature topic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add goto file feature topic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

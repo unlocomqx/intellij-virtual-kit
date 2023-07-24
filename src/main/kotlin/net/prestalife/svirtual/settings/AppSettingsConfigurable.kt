@@ -1,11 +1,7 @@
-package net.prestalife.svirtual.settings;
+package net.prestalife.svirtual.settings
 
-import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.options.Configurable
 import com.intellij.openapi.project.ProjectManager
-import com.intellij.openapi.roots.ProjectRootManager
-import com.intellij.openapi.vfs.VfsUtil
-import com.intellij.openapi.vfs.VirtualFileManager
 import com.intellij.ui.components.JBCheckBox
 import com.intellij.util.ui.FormBuilder
 import org.jetbrains.annotations.Nls
@@ -24,7 +20,7 @@ class AppSettingsConfigurable : Configurable {
 
     // A default constructor with no arguments is required because this implementation
     // is registered in an applicationConfigurable EP
-    override fun getDisplayName(): @Nls(capitalization = Nls.Capitalization.Title) String? {
+    override fun getDisplayName(): @Nls(capitalization = Nls.Capitalization.Title) String {
         return "VirtualKit Settings"
     }
 
@@ -40,10 +36,7 @@ class AppSettingsConfigurable : Configurable {
 
     override fun isModified(): Boolean {
         val settings = AppSettingsState.instance
-        return mySettingsComponent!!.nestRouteFiles != settings.nestRouteFiles ||
-                mySettingsComponent!!.modifyProjectTree != settings.modifyProjectTree ||
-                mySettingsComponent!!.modifyTabsTitles != settings.modifyTabsTitles ||
-                mySettingsComponent!!.modifyFileIcons != settings.modifyFileIcons
+        return mySettingsComponent!!.nestRouteFiles != settings.nestRouteFiles || mySettingsComponent!!.modifyProjectTree != settings.modifyProjectTree || mySettingsComponent!!.modifyTabsTitles != settings.modifyTabsTitles || mySettingsComponent!!.modifyFileIcons != settings.modifyFileIcons
     }
 
     override fun apply() {
@@ -52,16 +45,7 @@ class AppSettingsConfigurable : Configurable {
         settings.modifyProjectTree = mySettingsComponent!!.modifyProjectTree
         settings.modifyFileIcons = mySettingsComponent!!.modifyFileIcons
         settings.modifyTabsTitles = mySettingsComponent!!.modifyTabsTitles
-        ProjectManager.getInstance().openProjects.forEach { project ->
-            ApplicationManager.getApplication().runWriteAction {
-                VirtualFileManager.getInstance().asyncRefresh {
-                    ProjectRootManager.getInstance(project).contentRoots.forEach { root ->
-                        VfsUtil.markDirtyAndRefresh(false, true, true, root)
-                    }
-                }
-            }
-        }
-
+        ProjectManager.getInstance().openProjects.forEach { ProjectManager.getInstance().reloadProject(it) }
     }
 
     override fun reset() {
@@ -88,13 +72,9 @@ class AppSettingsComponent {
     private val modifyTabsTitlesCheckbox = JBCheckBox("Modify tabs titles")
 
     init {
-        panel = FormBuilder.createFormBuilder()
-            .addComponent(nestRouteFilesCheckbox, 1)
-            .addComponent(modifyProjectTreeCheckbox, 1)
-            .addComponent(modifyFileIconsCheckbox, 1)
-            .addComponent(modifyTabsTitlesCheckbox, 1)
-            .addComponentFillVertically(JPanel(), 0)
-            .panel
+        panel = FormBuilder.createFormBuilder().addComponent(nestRouteFilesCheckbox, 1)
+            .addComponent(modifyProjectTreeCheckbox, 1).addComponent(modifyFileIconsCheckbox, 1)
+            .addComponent(modifyTabsTitlesCheckbox, 1).addComponentFillVertically(JPanel(), 0).panel
     }
 
     val preferredFocusedComponent: JComponent
