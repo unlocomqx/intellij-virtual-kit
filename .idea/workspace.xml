@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Remove search contributor">
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Rename variables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualFileSearchContributor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualFileSearchContributor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/data/TouchedFiles.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/data/TouchedFiles.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -467,12 +466,26 @@
       <option name="project" value="LOCAL" />
       <updated>1690209562624</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Add file search">
+      <option name="closed" value="true" />
+      <created>1690216302194</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1690216302194</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Rename variables">
+      <option name="closed" value="true" />
+      <created>1690216351650</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1690216351650</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Nest sveltekit files" />
-    <MESSAGE value="Modify tree" />
     <MESSAGE value="Change name of +page.svelte file" />
     <MESSAGE value="Display svelte page icon" />
     <MESSAGE value="Add icons" />
@@ -496,7 +509,9 @@
     <MESSAGE value="wip: Refresh files" />
     <MESSAGE value="Add SvirtualFileSearchContributor" />
     <MESSAGE value="Remove search contributor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove search contributor" />
+    <MESSAGE value="Add file search" />
+    <MESSAGE value="Rename variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename variables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -510,11 +525,6 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualFileSystem.kt</url>
           <line>21</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2023.1.4/bbba795f05891f5026821fbc8a36cc17476e86f4/ideaIC-2023.1.4-sources.jar!/com/intellij/ide/actions/searcheverywhere/FileSearchEverywhereContributor.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2023.1.4/bbba795f05891f5026821fbc8a36cc17476e86f4/ideaIC-2023.1.4-sources.jar!/com/intellij/ide/util/gotoByName/DefaultFileNavigationContributor.java</url>

@@ -26,7 +26,15 @@ The tab titles are modified to show the route name
 
 ![tabs.png](src/main/resources/images/tabs.png)
 
+### Goto file
+
+The goto file dialog is modified to show the new file names
+
+![goto.png](src/main/resources/images/goto-file.png)
+
 ## Todo
+
 - [ ] Add a setting toggle nesting
 - [ ] Handle layout files
 - [ ] Handle routes with params
+- [x] Extend file search
