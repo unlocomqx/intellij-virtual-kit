@@ -16,23 +16,23 @@ class SvirtualEditorTabTitleProvider : EditorTabTitleProvider {
         val route = getRoute(file)
 
         if (file.name == "+page.svelte") {
-            val new_name = "$route.svelte"
-            TouchedFiles.addFile(file, new_name)
-            return new_name
+            val newName = "$route.svelte"
+            TouchedFiles.addFile(file, newName)
+            return newName
         }
 
         // check if filename matches +page.server.ts using regex
         if (file.name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
-            val new_name = "$route.server.ts"
-            TouchedFiles.addFile(file, new_name)
-            return new_name
+            val newName = "$route.server.ts"
+            TouchedFiles.addFile(file, newName)
+            return newName
         }
 
         if (file.name.matches(Regex("\\+page\\.(ts|js)"))) {
             val extension = file.extension
-            val new_name = "$route.$extension"
-            TouchedFiles.addFile(file, new_name)
-            return new_name
+            val newName = "$route.$extension"
+            TouchedFiles.addFile(file, newName)
+            return newName
         }
 
         return null
