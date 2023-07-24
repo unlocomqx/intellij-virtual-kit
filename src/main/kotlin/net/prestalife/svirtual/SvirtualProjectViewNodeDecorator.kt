@@ -18,28 +18,34 @@ class SvirtualProjectViewNodeDecorator : ProjectViewNodeDecorator {
         val name = node.virtualFile?.name ?: return
 
         if (name == "+page.svelte") {
-            TouchedFiles.list.add(node.virtualFile as VirtualFile)
             val route = getRoute(node)
             presentation.presentableText = "$route.svelte"
-            presentation.setIcon(Icons.Page)
+            TouchedFiles.addFile(node.virtualFile as VirtualFile, presentation.presentableText)
+            if (settings.modifyFileIcons) {
+                presentation.setIcon(Icons.Page)
+            }
             return
         }
 
         // check if filename matches +page.server.ts using regex
         if (name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
-            TouchedFiles.list.add(node.virtualFile as VirtualFile)
             val route = getRoute(node)
             presentation.presentableText = "$route.server.ts"
-            presentation.setIcon(Icons.Server)
+            TouchedFiles.addFile(node.virtualFile as VirtualFile, presentation.presentableText)
+            if (settings.modifyFileIcons) {
+                presentation.setIcon(Icons.Server)
+            }
             return
         }
 
         if (name.matches(Regex("\\+page\\.(ts|js)"))) {
-            TouchedFiles.list.add(node.virtualFile as VirtualFile)
             val extension = node.virtualFile?.extension
             val route = getRoute(node)
             presentation.presentableText = "$route.$extension"
-            presentation.setIcon(if (extension == "ts") Icons.PageTS else Icons.PageJS)
+            TouchedFiles.addFile(node.virtualFile as VirtualFile, presentation.presentableText)
+            if (settings.modifyFileIcons) {
+                presentation.setIcon(if (extension == "ts") Icons.PageTS else Icons.PageJS)
+            }
             return
         }
     }

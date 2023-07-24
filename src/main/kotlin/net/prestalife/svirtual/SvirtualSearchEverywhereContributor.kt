@@ -3,6 +3,7 @@ package net.prestalife.svirtual
 import com.intellij.ide.IdeBundle
 import com.intellij.ide.actions.searcheverywhere.*
 import com.intellij.ide.actions.searcheverywhere.SearchEverywhereFiltersStatisticsCollector.FileTypeFilterCollector
+import com.intellij.ide.util.gotoByName.FilteringGotoByModel
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.progress.ProgressIndicator
@@ -14,7 +15,17 @@ import org.jetbrains.annotations.NotNull
 
 class SvirtualSearchEverywhereContributor(@NotNull event: AnActionEvent) : FileSearchEverywhereContributor(event) {
 
-    private val myFilter = createFileTypeFilter(this.myProject);
+    private val myFilter = createFileTypeFilter(this.myProject)
+
+    override fun processElement(
+        progressIndicator: ProgressIndicator,
+        consumer: Processor<in FoundItemDescriptor<Any>>,
+        model: FilteringGotoByModel<*>?,
+        element: Any?,
+        degree: Int
+    ): Boolean {
+        return super.processElement(progressIndicator, consumer, model, element, degree)
+    }
 
     override fun fetchElements(pattern: String, progressIndicator: ProgressIndicator, consumer: Processor<in Any>) {
         super.fetchElements(pattern, progressIndicator, consumer)

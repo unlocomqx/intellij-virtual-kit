@@ -30,7 +30,9 @@
         <projectViewNodeDecorator implementation="net.prestalife.svirtual.SvirtualProjectViewNodeDecorator"/>
         <editorTabTitleProvider implementation="net.prestalife.svirtual.SvirtualEditorTabTitleProvider"/>
         <fileIconProvider implementation="net.prestalife.svirtual.SvirtualFileIconProvider"/>
-        <searchEverywhereContributor implementation="net.prestalife.svirtual.SvirtualSearchEverywhereContributor$Factory"/>
+        <searchEverywhereContributor
+                implementation="net.prestalife.svirtual.SvirtualSearchEverywhereContributor$Factory"/>
+        <gotoFileContributor implementation="net.prestalife.svirtual.SvirtualFileSearchContributor"/>
 
         <applicationService
                 serviceImplementation="net.prestalife.svirtual.settings.AppSettingsState"/>

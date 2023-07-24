@@ -17,17 +17,17 @@ class SvirtualFileIconProvider : FileIconProvider {
         val filename = file.name
 
         if (filename == "+page.svelte") {
-            TouchedFiles.list.add(file)
+            TouchedFiles.addFile(file)
             return Icons.Page
         }
 
         if (filename.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
-            TouchedFiles.list.add(file)
+            TouchedFiles.addFile(file)
             return Icons.Server
         }
 
         if (filename.matches(Regex("\\+page\\.(ts|js)"))) {
-            TouchedFiles.list.add(file)
+            TouchedFiles.addFile(file)
             val extension = file.extension
             return if (extension == "ts") Icons.PageTS else Icons.PageJS
         }
