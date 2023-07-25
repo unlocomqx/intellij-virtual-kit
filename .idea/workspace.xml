@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Delete unused class">
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Update icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "code.cleanup.on.save": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/unloco/code/jetbrains/svirtual/svirtual/src/main/resources/fileTemplates",
+    "last_opened_file_path": "/Users/unloco/code/jetbrains/svirtual/svirtual/src/main/resources/META-INF",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -123,11 +123,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
       <recent name="$PROJECT_DIR$/src/main/resources/fileTemplates" />
       <recent name="$PROJECT_DIR$/src/main/resources/icons" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/images" />
-      <recent name="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/fileTemplates/j2ee" />
@@ -259,9 +259,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.svirtual [jar]" />
         <item itemvalue="Gradle.svirtual [publishPlugin]" />
         <item itemvalue="Gradle.svirtual [kotlinSourcesJar]" />
-        <item itemvalue="Gradle.svirtual [jar]" />
         <item itemvalue="Gradle.svirtual [build]" />
         <item itemvalue="Gradle.svirtual [signPlugin]" />
       </list>
@@ -275,38 +275,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Display svelte page icon">
-      <option name="closed" value="true" />
-      <created>1690074918603</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1690074918603</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Add icons">
-      <option name="closed" value="true" />
-      <created>1690081600166</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1690081600166</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Add SveltePageServerNode">
-      <option name="closed" value="true" />
-      <created>1690082782102</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1690082782102</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Remove comment">
-      <option name="closed" value="true" />
-      <created>1690082802975</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1690082802975</updated>
     </task>
     <task id="LOCAL-00012" summary="Add SveltePageScriptNode">
       <option name="closed" value="true" />
@@ -668,14 +636,42 @@
       <option name="project" value="LOCAL" />
       <updated>1690304983858</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Update readme">
+      <option name="closed" value="true" />
+      <created>1690306411998</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1690306411998</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Change target">
+      <option name="closed" value="true" />
+      <created>1690306449480</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1690306449480</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Tick checkboxes">
+      <option name="closed" value="true" />
+      <created>1690306499659</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1690306499659</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Update icon">
+      <option name="closed" value="true" />
+      <created>1690306618483</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1690306618483</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="wip: Refresh files" />
-    <MESSAGE value="Add SvirtualFileSearchContributor" />
-    <MESSAGE value="Remove search contributor" />
-    <MESSAGE value="Add file search" />
     <MESSAGE value="Rename variables" />
     <MESSAGE value="Add goto file feature topic" />
     <MESSAGE value="Reload project after saving settings" />
@@ -697,7 +693,11 @@
     <MESSAGE value="Update workspace" />
     <MESSAGE value="Change plugin name" />
     <MESSAGE value="Delete unused class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete unused class" />
+    <MESSAGE value="Update readme" />
+    <MESSAGE value="Change target" />
+    <MESSAGE value="Tick checkboxes" />
+    <MESSAGE value="Update icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
