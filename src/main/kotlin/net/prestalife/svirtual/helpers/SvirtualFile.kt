@@ -1,7 +1,6 @@
 package net.prestalife.svirtual.helpers
 
 import com.intellij.openapi.project.Project
-import com.intellij.openapi.util.NlsSafe
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.psi.PsiFile
 import com.intellij.psi.PsiManager
@@ -13,6 +12,8 @@ class SvirtualFile {
     companion object {
         fun generateName(file: VirtualFile): String? {
             val name = file.name
+            val extension = file.extension
+
             val route = getRoute(file) ?: return null
 
             if (name == "+page.svelte") {
@@ -28,12 +29,10 @@ class SvirtualFile {
             }
 
             if (name.matches(Regex("\\+page\\.(ts|js)"))) {
-                val extension = file.extension
                 return "$route.$extension"
             }
 
             if (name.matches(Regex("\\+server\\.(ts|js)"))) {
-                val extension = file.extension
                 return "$route.endpoint.$extension"
             }
 
@@ -42,7 +41,6 @@ class SvirtualFile {
             }
 
             if (name.matches(Regex("\\+layout\\.(ts|js)"))) {
-                val extension = file.extension
                 return "$route.layout.$extension"
             }
 
@@ -62,7 +60,7 @@ class SvirtualFile {
             return routeName
         }
 
-        private fun sanitizeName(name: @NlsSafe String): String {
+        private fun sanitizeName(name: String): String {
             if (name == "routes") {
                 return "index"
             }
