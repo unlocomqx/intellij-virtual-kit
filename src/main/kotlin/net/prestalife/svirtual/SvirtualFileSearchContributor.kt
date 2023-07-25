@@ -26,7 +26,6 @@ class SvirtualFileSearchContributor : ChooseByNameContributorEx {
 
         val names = mutableListOf<String>()
 
-        // replace with map
         val files = arrayOf(
             "+page.svelte",
             "+page.server.ts",
