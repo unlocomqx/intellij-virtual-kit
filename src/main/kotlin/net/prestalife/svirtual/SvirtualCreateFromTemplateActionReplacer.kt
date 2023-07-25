@@ -17,6 +17,7 @@ import javax.swing.Icon
 
 
 class SvirtualCreateFromTemplateActionReplacer : CreateFromTemplateActionReplacer {
+
     override fun replaceCreateFromFileTemplateAction(fileTemplate: FileTemplate?): AnAction {
         val filename = (fileTemplate?.name + "." + fileTemplate?.extension)
         val icon = SvirtualFile.generateIcon(filename) ?: Icons.Svelte
