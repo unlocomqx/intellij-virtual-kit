@@ -20,7 +20,7 @@ class SvirtualProjectViewNodeDecorator : ProjectViewNodeDecorator {
         }
 
         if (settings.modifyFileIcons) {
-            val icon = SvirtualFile.generateIcon(node.virtualFile!!)
+            val icon = SvirtualFile.generateIcon(node.virtualFile!!.name)
             if (icon != null) {
                 presentation.setIcon(icon)
             }

@@ -76,28 +76,26 @@ class SvirtualFile {
             return psiFiles
         }
 
-        fun generateIcon(file: VirtualFile): Icon? {
-            val name = file.name
+        fun generateIcon(filename: String): Icon? {
+            val extension = filename.substringAfterLast('.')
 
-            if (name == "+page.svelte") {
+            if (filename == "+page.svelte") {
                 return Icons.Page
             }
 
-            if (name == "+layout.svelte") {
+            if (filename == "+layout.svelte") {
                 return Icons.Layout
             }
 
-            if (name.matches(Regex("\\+(page|layout)\\.server\\.(ts|js)"))) {
+            if (filename.matches(Regex("\\+(page|layout)\\.server\\.(ts|js)"))) {
                 return Icons.Server
             }
 
-            if (name.matches(Regex("\\+(page|layout)\\.(ts|js)"))) {
-                val extension = file.extension
+            if (filename.matches(Regex("\\+(page|layout)\\.(ts|js)"))) {
                 return if (extension == "ts") Icons.PageTS else Icons.PageJS
             }
 
-            if (name.matches(Regex("\\+server\\.(ts|js)"))) {
-                val extension = file.extension
+            if (filename.matches(Regex("\\+server\\.(ts|js)"))) {
                 return if (extension == "ts") Icons.PageTS else Icons.PageJS
             }
 

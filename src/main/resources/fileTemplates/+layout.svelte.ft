@@ -4,4 +4,3 @@
     export let data: LayoutData;
 </script>
 
-#[[$END$]]#

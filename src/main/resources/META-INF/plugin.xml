@@ -39,6 +39,8 @@
                 instance="net.prestalife.svirtual.settings.AppSettingsConfigurable"
                 id="net.prestalife.svirtual.settings.AppSettingsConfigurable"
                 displayName="VirtualKit Settings"/>
-        <fileTemplateGroup implementation="net.prestalife.svirtual.SvirtualFileTemplateGroup"/>
+
+        <createFromTemplateActionReplacer
+                implementation="net.prestalife.svirtual.SvirtualCreateFromTemplateActionReplacer"/>
     </extensions>
 </idea-plugin>
