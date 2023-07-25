@@ -1,6 +1,7 @@
 package net.prestalife.svirtual.helpers
 
 import com.intellij.openapi.project.Project
+import com.intellij.openapi.util.NlsSafe
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.psi.PsiFile
 import com.intellij.psi.PsiManager
@@ -50,15 +51,23 @@ class SvirtualFile {
 
         private fun getRoute(file: VirtualFile): String? {
             var parent = file.parent ?: return null
-            var routeName = (if (parent.name == "routes") "index" else parent.name)
+            var routeName = sanitizeName(parent.name)
 
             while (routeName.startsWith('[')) {
                 parent = parent.parent ?: return routeName
-                val parentRoute = (if (parent.name == "routes") "index" else parent.name)
+                val parentRoute = sanitizeName(parent.name)
                 routeName = "$parentRoute/$routeName"
             }
 
             return routeName
+        }
+
+        private fun sanitizeName(name: @NlsSafe String): String {
+            if (name == "routes") {
+                return "index"
+            }
+
+            return name
         }
 
         fun convertVirtualFilesToPsiFiles(project: Project, files: Collection<VirtualFile?>): Collection<PsiFile> {
