@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="wip: Add file templates">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualFileTemplateGroup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualDefaultTemplatePropertiesProvider.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualProjectViewNodeDecorator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualProjectViewNodeDecorator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/helpers/SvirtualFile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/helpers/SvirtualFile.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/_fileTemplates/SvelteKit Layout Module.ts.ft" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/_fileTemplates/SvelteKit Layout Page.svelte.ft" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/_fileTemplates/SvelteKit Layout Server File.ts.ft" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/_fileTemplates/SvelteKit Page Module.ts.ft" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/_fileTemplates/SvelteKit Page.ft" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/_fileTemplates/SvelteKit Server File.ts.ft" beforeDir="false" />
-    </list>
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Add files templates" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,22 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Refactor">
-      <option name="closed" value="true" />
-      <created>1690065718624</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1690065718624</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Save workspace">
-      <option name="closed" value="true" />
-      <created>1690065726935</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1690065726935</updated>
     </task>
     <task id="LOCAL-00005" summary="Nest sveltekit files">
       <option name="closed" value="true" />
@@ -609,11 +580,26 @@
       <option name="project" value="LOCAL" />
       <updated>1690271304537</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Add files templates">
+      <option name="closed" value="true" />
+      <created>1690303971630</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1690303971630</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Add files templates">
+      <option name="closed" value="true" />
+      <created>1690303977279</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1690303977279</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add description" />
     <MESSAGE value="Add features" />
     <MESSAGE value="Add settings" />
     <MESSAGE value="Add more options" />
@@ -638,7 +624,8 @@
     <MESSAGE value="Separate page and layout" />
     <MESSAGE value="Remove comment" />
     <MESSAGE value="wip: Add file templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: Add file templates" />
+    <MESSAGE value="Add files templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add files templates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -660,7 +647,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt</url>
-          <line>32</line>
+          <line>33</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
