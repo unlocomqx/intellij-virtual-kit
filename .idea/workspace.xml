@@ -140,7 +140,7 @@
       <recent name="net.prestalife.svirtual.settings" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Run Plugin">
+  <component name="RunManager" selected="Gradle.svirtual [publishPlugin]">
     <configuration name="svirtual [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -258,8 +258,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.svirtual [jar]" />
         <item itemvalue="Gradle.svirtual [publishPlugin]" />
+        <item itemvalue="Gradle.svirtual [jar]" />
         <item itemvalue="Gradle.svirtual [kotlinSourcesJar]" />
         <item itemvalue="Gradle.svirtual [build]" />
         <item itemvalue="Gradle.svirtual [signPlugin]" />
