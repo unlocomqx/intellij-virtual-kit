@@ -4,6 +4,8 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.psi.PsiFile
 import com.intellij.psi.PsiManager
+import net.prestalife.svirtual.Icons
+import javax.swing.Icon
 
 class SvirtualFile {
 
@@ -50,6 +52,25 @@ class SvirtualFile {
                 }
             }
             return psiFiles
+        }
+
+        fun generateIcon(file: VirtualFile): Icon? {
+            val name = file.name
+
+            if (name == "+page.svelte") {
+                return Icons.Page
+            }
+
+            if (name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
+                return Icons.Server
+            }
+
+            if (name.matches(Regex("\\+page\\.(ts|js)"))) {
+                val extension = file.extension
+                return if (extension == "ts") Icons.PageTS else Icons.PageJS
+            }
+
+            return null
         }
     }
 }

@@ -13,33 +13,17 @@ class SvirtualProjectViewNodeDecorator : ProjectViewNodeDecorator {
             return
         }
 
-        val name = node.virtualFile?.name ?: return
         val newName = SvirtualFile.generateName(node.virtualFile!!)
 
-        if (name == "+page.svelte") {
+        if (newName != null) {
             presentation.presentableText = newName
-            if (settings.modifyFileIcons) {
-                presentation.setIcon(Icons.Page)
-            }
-            return
         }
 
-        // check if filename matches +page.server.ts using regex
-        if (name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
-            presentation.presentableText = newName
-            if (settings.modifyFileIcons) {
-                presentation.setIcon(Icons.Server)
+        if (settings.modifyFileIcons) {
+            val icon = SvirtualFile.generateIcon(node.virtualFile!!)
+            if (icon != null) {
+                presentation.setIcon(icon)
             }
-            return
-        }
-
-        if (name.matches(Regex("\\+page\\.(ts|js)"))) {
-            val extension = node.virtualFile?.extension
-            presentation.presentableText = newName
-            if (settings.modifyFileIcons) {
-                presentation.setIcon(if (extension == "ts") Icons.PageTS else Icons.PageJS)
-            }
-            return
         }
     }
 }
