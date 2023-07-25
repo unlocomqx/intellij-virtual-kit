@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Refactor">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/helpers/SvirtualFile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/helpers/SvirtualFile.kt" afterDir="false" />
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Bump">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +141,7 @@
       <recent name="net.prestalife.svirtual.settings" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.svirtual [publishPlugin]">
+  <component name="RunManager" selected="Gradle.Run Plugin">
     <configuration name="svirtual [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -274,22 +275,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Update workspace">
-      <option name="closed" value="true" />
-      <created>1690083544505</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1690083544505</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Skip NestingTreeNode">
-      <option name="closed" value="true" />
-      <created>1690085315411</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1690085315411</updated>
     </task>
     <task id="LOCAL-00015" summary="Remove tree structure provider">
       <option name="closed" value="true" />
@@ -667,11 +652,26 @@
       <option name="project" value="LOCAL" />
       <updated>1690307893687</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Refactor">
+      <option name="closed" value="true" />
+      <created>1690308134807</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1690308134807</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Bump">
+      <option name="closed" value="true" />
+      <created>1690308206256</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1690308206256</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add goto file feature topic" />
     <MESSAGE value="Reload project after saving settings" />
     <MESSAGE value="Remove type" />
     <MESSAGE value="Improve file search" />
@@ -696,7 +696,8 @@
     <MESSAGE value="Tick checkboxes" />
     <MESSAGE value="Update icon" />
     <MESSAGE value="Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
+    <MESSAGE value="Bump" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bump" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
