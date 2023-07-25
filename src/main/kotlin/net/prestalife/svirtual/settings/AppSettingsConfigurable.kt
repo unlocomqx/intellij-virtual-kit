@@ -4,6 +4,7 @@ import com.intellij.openapi.options.Configurable
 import com.intellij.openapi.project.ProjectManager
 import com.intellij.ui.components.JBCheckBox
 import com.intellij.util.ui.FormBuilder
+import com.intellij.util.ui.UI
 import org.jetbrains.annotations.Nls
 import org.jetbrains.annotations.NotNull
 import org.jetbrains.annotations.Nullable
@@ -36,7 +37,10 @@ class AppSettingsConfigurable : Configurable {
 
     override fun isModified(): Boolean {
         val settings = AppSettingsState.instance
-        return mySettingsComponent!!.nestRouteFiles != settings.nestRouteFiles || mySettingsComponent!!.modifyProjectTree != settings.modifyProjectTree || mySettingsComponent!!.modifyTabsTitles != settings.modifyTabsTitles || mySettingsComponent!!.modifyFileIcons != settings.modifyFileIcons
+        return mySettingsComponent!!.nestRouteFiles != settings.nestRouteFiles ||
+                mySettingsComponent!!.modifyProjectTree != settings.modifyProjectTree ||
+                mySettingsComponent!!.modifyTabsTitles != settings.modifyTabsTitles ||
+                mySettingsComponent!!.modifyFileIcons != settings.modifyFileIcons
     }
 
     override fun apply() {
@@ -72,9 +76,21 @@ class AppSettingsComponent {
     private val modifyTabsTitlesCheckbox = JBCheckBox("Modify tabs titles")
 
     init {
-        panel = FormBuilder.createFormBuilder().addComponent(nestRouteFilesCheckbox, 1)
-            .addComponent(modifyProjectTreeCheckbox, 1).addComponent(modifyFileIconsCheckbox, 1)
-            .addComponent(modifyTabsTitlesCheckbox, 1).addComponentFillVertically(JPanel(), 0).panel
+        panel = FormBuilder.createFormBuilder()
+            .addComponent(
+                UI.PanelFactory.panel(nestRouteFilesCheckbox)
+                    .withComment("Nest +page.server.js and +page.js under +page.svelte. May require restart.")
+                    .createPanel(), 1
+            )
+            .addComponent(
+                UI.PanelFactory.panel(modifyProjectTreeCheckbox)
+                    .withComment("Rename route files to {route}.svelte and {route}.server.js etc...").createPanel(), 1
+            ).addComponent(
+                UI.PanelFactory.panel(modifyFileIconsCheckbox)
+                    .withComment("Display different icons for route file types").createPanel(), 1
+            )
+            .addComponent(modifyTabsTitlesCheckbox, 1).addComponentFillVertically(JPanel(), 0)
+            .panel
     }
 
     val preferredFocusedComponent: JComponent
