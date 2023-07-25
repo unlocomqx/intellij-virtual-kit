@@ -25,13 +25,22 @@ class SvirtualFileSearchContributor : ChooseByNameContributorEx {
         filesMap.clear()
 
         val names = mutableListOf<String>()
-        val files = FilenameIndex.getVirtualFilesByName("+page.svelte", scope) +
-                FilenameIndex.getVirtualFilesByName("+page.server.ts", scope) +
-                FilenameIndex.getVirtualFilesByName("+page.server.js", scope) +
-                FilenameIndex.getVirtualFilesByName("+page.ts", scope) +
-                FilenameIndex.getVirtualFilesByName("+page.js", scope) +
-                FilenameIndex.getVirtualFilesByName("+server.ts", scope) +
-                FilenameIndex.getVirtualFilesByName("+server.js", scope)
+
+        // replace with map
+        val files = arrayOf(
+            "+page.svelte",
+            "+page.server.ts",
+            "+page.server.js",
+            "+page.ts",
+            "+page.js",
+            "+server.ts",
+            "+server.js",
+            "+layout.svelte",
+            "+layout.server.ts",
+            "+layout.server.js",
+            "+layout.ts",
+            "+layout.js"
+        ).map { FilenameIndex.getVirtualFilesByName(it, scope) }.flatten()
 
         files.forEach {
             val name = SvirtualFile.generateName(it)
