@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Bump">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt" afterDir="false" />
-    </list>
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Open new file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -275,14 +272,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Remove tree structure provider">
-      <option name="closed" value="true" />
-      <created>1690085350929</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1690085350929</updated>
     </task>
     <task id="LOCAL-00016" summary="Remove unused">
       <option name="closed" value="true" />
@@ -668,11 +657,18 @@
       <option name="project" value="LOCAL" />
       <updated>1690308206256</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Open new file">
+      <option name="closed" value="true" />
+      <created>1690309622254</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1690309622254</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reload project after saving settings" />
     <MESSAGE value="Remove type" />
     <MESSAGE value="Improve file search" />
     <MESSAGE value="Remove TouchedFiles" />
@@ -697,7 +693,8 @@
     <MESSAGE value="Update icon" />
     <MESSAGE value="Refactor" />
     <MESSAGE value="Bump" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bump" />
+    <MESSAGE value="Open new file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Open new file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
