@@ -27,12 +27,25 @@ class SvirtualFile {
                 return "$route.$extension"
             }
 
+            if (name.matches(Regex("\\+server\\.(ts|js)"))) {
+                val extension = file.extension
+                return "$route.endpoint.$extension"
+            }
+
             return null
         }
 
         private fun getRoute(file: VirtualFile): String? {
-            val parent = file.parent ?: return null
-            return (if (parent.name == "routes") "index" else parent.name)
+            var parent = file.parent ?: return null
+            var routeName = (if (parent.name == "routes") "index" else parent.name)
+
+            while (routeName.startsWith('[')) {
+                parent = parent.parent ?: return routeName
+                val parentRoute = (if (parent.name == "routes") "index" else parent.name)
+                routeName = "$parentRoute/$routeName"
+            }
+
+            return routeName
         }
 
         fun convertVirtualFilesToPsiFiles(project: Project, files: Collection<VirtualFile?>): Collection<PsiFile> {
@@ -62,6 +75,11 @@ class SvirtualFile {
             }
 
             if (name.matches(Regex("\\+page\\.(ts|js)"))) {
+                val extension = file.extension
+                return if (extension == "ts") Icons.PageTS else Icons.PageJS
+            }
+
+            if (name.matches(Regex("\\+server\\.(ts|js)"))) {
                 val extension = file.extension
                 return if (extension == "ts") Icons.PageTS else Icons.PageJS
             }

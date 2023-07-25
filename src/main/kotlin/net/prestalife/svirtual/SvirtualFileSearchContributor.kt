@@ -3,7 +3,6 @@ package net.prestalife.svirtual
 import com.intellij.navigation.ChooseByNameContributorEx
 import com.intellij.navigation.NavigationItem
 import com.intellij.openapi.diagnostic.Logger
-import com.intellij.openapi.util.Comparing
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.psi.search.FilenameIndex
 import com.intellij.psi.search.GlobalSearchScope
@@ -30,7 +29,9 @@ class SvirtualFileSearchContributor : ChooseByNameContributorEx {
                 FilenameIndex.getVirtualFilesByName("+page.server.ts", scope) +
                 FilenameIndex.getVirtualFilesByName("+page.server.js", scope) +
                 FilenameIndex.getVirtualFilesByName("+page.ts", scope) +
-                FilenameIndex.getVirtualFilesByName("+page.js", scope)
+                FilenameIndex.getVirtualFilesByName("+page.js", scope) +
+                FilenameIndex.getVirtualFilesByName("+server.ts", scope) +
+                FilenameIndex.getVirtualFilesByName("+server.js", scope)
 
         files.forEach {
             val name = SvirtualFile.generateName(it)
@@ -49,7 +50,7 @@ class SvirtualFileSearchContributor : ChooseByNameContributorEx {
     override fun processElementsWithName(
         name: String, processor: Processor<in NavigationItem>, parameters: FindSymbolParameters
     ) {
-        val files = filesMap.filter { Comparing.equal(it.key, name) }.map { it.value }
+        val files = filesMap.filter { it.key == name }.values
 
         SvirtualFile.convertVirtualFilesToPsiFiles(parameters.project, files)
             .forEach { if (!processor.process(it)) return@forEach }

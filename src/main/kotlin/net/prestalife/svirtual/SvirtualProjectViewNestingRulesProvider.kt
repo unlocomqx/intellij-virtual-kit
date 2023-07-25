@@ -13,6 +13,8 @@ class SvirtualProjectViewNestingRulesProvider : ProjectViewNestingRulesProvider 
         consumer.addNestingRule("+page.svelte", "+page.server.js")
         consumer.addNestingRule("+page.svelte", "+page.ts")
         consumer.addNestingRule("+page.svelte", "+page.js")
+        consumer.addNestingRule("+page.svelte", "+server.ts")
+        consumer.addNestingRule("+page.svelte", "+server.js")
 
         consumer.addNestingRule("+layout.svelte", "+layout.server.ts")
         consumer.addNestingRule("+layout.svelte", "+layout.server.js")
