@@ -13,6 +13,8 @@ object Icons {
         )
     }
 
+    val Svelte = load("icons/svelte.svg", -938751999, 0)
+
     val Page = load("icons/page.svg", -938751982, 0)
     val Server = load("icons/server.svg", -938751981, 0)
     val PageTS = load("icons/page-ts.svg", -938751980, 0)
