@@ -35,10 +35,6 @@ class SvirtualFile {
             return (if (parent.name == "routes") "index" else parent.name)
         }
 
-        fun generateNames(files: List<VirtualFile>): List<String> {
-            return files.mapNotNull { generateName(it) }
-        }
-
         fun convertVirtualFilesToPsiFiles(project: Project, files: Collection<VirtualFile?>): Collection<PsiFile> {
             val psiFiles: MutableCollection<PsiFile> = HashSet()
             var psiManager: PsiManager? = null
