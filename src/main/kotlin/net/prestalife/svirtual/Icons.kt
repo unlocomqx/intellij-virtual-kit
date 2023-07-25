@@ -17,4 +17,6 @@ object Icons {
     val Server = load("icons/server.svg", -938751981, 0)
     val PageTS = load("icons/page-ts.svg", -938751980, 0)
     val PageJS = load("icons/page-js.svg", -938751979, 0)
+
+    val Layout = load("icons/layout.svg", -938751978, 0)
 }

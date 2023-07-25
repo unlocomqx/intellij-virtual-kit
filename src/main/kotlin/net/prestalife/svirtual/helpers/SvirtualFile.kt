@@ -18,6 +18,10 @@ class SvirtualFile {
                 return "$route.svelte"
             }
 
+            if (name == "+layout.svelte") {
+                return "$route.layout.svelte"
+            }
+
             if (name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
                 return "$route.server.ts"
             }
@@ -30,6 +34,15 @@ class SvirtualFile {
             if (name.matches(Regex("\\+server\\.(ts|js)"))) {
                 val extension = file.extension
                 return "$route.endpoint.$extension"
+            }
+
+            if (name.matches(Regex("\\+layout\\.server\\.(ts|js)"))) {
+                return "$route.layout.server.ts"
+            }
+
+            if (name.matches(Regex("\\+layout\\.(ts|js)"))) {
+                val extension = file.extension
+                return "$route.layout.$extension"
             }
 
             return null
@@ -70,11 +83,15 @@ class SvirtualFile {
                 return Icons.Page
             }
 
-            if (name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
+            if (name == "+layout.svelte") {
+                return Icons.Layout
+            }
+
+            if (name.matches(Regex("\\+(page|layout)\\.server\\.(ts|js)"))) {
                 return Icons.Server
             }
 
-            if (name.matches(Regex("\\+page\\.(ts|js)"))) {
+            if (name.matches(Regex("\\+(page|layout)\\.(ts|js)"))) {
                 val extension = file.extension
                 return if (extension == "ts") Icons.PageTS else Icons.PageJS
             }
