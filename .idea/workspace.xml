@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Update workspace">
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Delete unused class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +45,6 @@
                 <item name="svirtual" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="svirtual" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -170,7 +164,7 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="svirtual [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="svirtual [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -181,7 +175,29 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="classes" />
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="svirtual [kotlinSourcesJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="kotlinSourcesJar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -194,10 +210,15 @@
     </configuration>
     <configuration name="svirtual [publishPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="PUBLISH_TOKEN" value="perm:dW5sb2NvbXF4.OTItODQ0OQ==.7WOfgydyFPA8Tpqq9rOcixnUIPZqxz" />
+          </map>
+        </option>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -214,11 +235,35 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="svirtual [signPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signPlugin" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.svirtual [publishPlugin]" />
+        <item itemvalue="Gradle.svirtual [kotlinSourcesJar]" />
+        <item itemvalue="Gradle.svirtual [jar]" />
         <item itemvalue="Gradle.svirtual [build]" />
-        <item itemvalue="Gradle.svirtual [classes]" />
+        <item itemvalue="Gradle.svirtual [signPlugin]" />
       </list>
     </recent_temporary>
   </component>
@@ -230,22 +275,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Modify tree">
-      <option name="closed" value="true" />
-      <created>1690071957102</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1690071957102</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Change name of +page.svelte file">
-      <option name="closed" value="true" />
-      <created>1690073365792</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1690073365792</updated>
     </task>
     <task id="LOCAL-00008" summary="Display svelte page icon">
       <option name="closed" value="true" />
@@ -623,12 +652,26 @@
       <option name="project" value="LOCAL" />
       <updated>1690304131461</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Change plugin name">
+      <option name="closed" value="true" />
+      <created>1690304939063</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1690304939064</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Delete unused class">
+      <option name="closed" value="true" />
+      <created>1690304983858</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1690304983858</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add settings" />
-    <MESSAGE value="Add more options" />
     <MESSAGE value="wip: Refresh files" />
     <MESSAGE value="Add SvirtualFileSearchContributor" />
     <MESSAGE value="Remove search contributor" />
@@ -652,7 +695,9 @@
     <MESSAGE value="wip: Add file templates" />
     <MESSAGE value="Add files templates" />
     <MESSAGE value="Update workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update workspace" />
+    <MESSAGE value="Change plugin name" />
+    <MESSAGE value="Delete unused class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unused class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -666,11 +711,6 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualFileSystem.kt</url>
           <line>21</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualDefaultTemplatePropertiesProvider.kt</url>
-          <line>9</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2023.1.4/bbba795f05891f5026821fbc8a36cc17476e86f4/ideaIC-2023.1.4-sources.jar!/com/intellij/ide/util/gotoByName/DefaultFileNavigationContributor.java</url>

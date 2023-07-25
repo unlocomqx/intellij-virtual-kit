@@ -12,25 +12,33 @@ An Intellij plugin to modify the SvelteKit project tree to make it easier to nav
 
 Same for ts files
 
-![routes.png](src/main/resources/images/routes.png)
+<a href="src/main/resources/images/routes.png">
+<img src="src/main/resources/images/routes.png" alt="Routes" width="300"/>
+</a>
 
 ### Nesting
 
 +page.server.js and +page.js are nested under +page.svelte
 
-![nesting.png](src/main/resources/images/nesting.png)
+<a href="src/main/resources/images/nesting.png">
+    <img src="src/main/resources/images/nesting.png" alt="Nesting" width="300"/>
+</a>
 
 ### Tabs
 
 The tab titles are modified to show the route name
 
-![tabs.png](src/main/resources/images/tabs.png)
+<a href="src/main/resources/images/tabs.png">
+    <img src="src/main/resources/images/tabs.png" alt="Tabs" width="300"/>
+</a>
 
 ### Goto file
 
 The goto file dialog is modified to show the new file names
 
-![goto.png](src/main/resources/images/goto-file.png)
+<a href="src/main/resources/images/goto-file.png">
+    <img src="src/main/resources/images/goto-file.png" alt="goto-file.png" width="300"/>
+</a>
 
 ## Todo
 
