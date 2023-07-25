@@ -35,6 +35,7 @@ class SvirtualFileSearchContributor : ChooseByNameContributorEx {
             "+page.js",
             "+server.ts",
             "+server.js",
+
             "+layout.svelte",
             "+layout.server.ts",
             "+layout.server.js",
