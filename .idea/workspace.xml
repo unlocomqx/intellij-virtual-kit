@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Add comments">
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Remove unused">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualFileSearchContributor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualFileSearchContributor.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -537,12 +537,26 @@
       <option name="project" value="LOCAL" />
       <updated>1690262525798</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Check &quot;Add a setting toggle nesting&quot;">
+      <option name="closed" value="true" />
+      <created>1690262656381</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1690262656381</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Remove unused">
+      <option name="closed" value="true" />
+      <created>1690262684998</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1690262684998</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Remove tree structure provider" />
-    <MESSAGE value="Remove unused" />
     <MESSAGE value="Remove comment" />
     <MESSAGE value="Add SvirtualEditorTabTitleProvider" />
     <MESSAGE value="Add SvirtualFileIconProvider" />
@@ -566,7 +580,9 @@
     <MESSAGE value="Remove TouchedFiles" />
     <MESSAGE value="Extract generateIcon" />
     <MESSAGE value="Add comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comments" />
+    <MESSAGE value="Check &quot;Add a setting toggle nesting&quot;" />
+    <MESSAGE value="Remove unused" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unused" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
