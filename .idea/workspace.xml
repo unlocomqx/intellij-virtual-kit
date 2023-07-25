@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Bump">
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Save">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +141,7 @@
       <recent name="net.prestalife.svirtual.settings" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.svirtual [publishPlugin]">
+  <component name="RunManager" selected="Gradle.Run Plugin">
     <configuration name="svirtual [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -274,14 +275,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Remove comment">
-      <option name="closed" value="true" />
-      <created>1690085549465</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1690085549465</updated>
     </task>
     <task id="LOCAL-00019" summary="Add SvirtualEditorTabTitleProvider">
       <option name="closed" value="true" />
@@ -667,11 +660,18 @@
       <option name="project" value="LOCAL" />
       <updated>1690312749142</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Save">
+      <option name="closed" value="true" />
+      <created>1690312851168</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1690312851168</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Improve file search" />
     <MESSAGE value="Remove TouchedFiles" />
     <MESSAGE value="Extract generateIcon" />
     <MESSAGE value="Add comments" />
@@ -696,7 +696,8 @@
     <MESSAGE value="Open new file" />
     <MESSAGE value="Update url" />
     <MESSAGE value="Bump" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bump" />
+    <MESSAGE value="Save" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

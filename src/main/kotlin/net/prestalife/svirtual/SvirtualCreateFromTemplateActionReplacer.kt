@@ -3,6 +3,7 @@ package net.prestalife.svirtual
 import com.intellij.ide.fileTemplates.CreateFromTemplateActionReplacer
 import com.intellij.ide.fileTemplates.FileTemplate
 import com.intellij.ide.fileTemplates.FileTemplateUtil
+import com.intellij.ide.projectView.ProjectView
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
@@ -55,14 +56,11 @@ class SvirtualCreateFromTemplateActionReplacer : CreateFromTemplateActionReplace
             if (fileTemplate != null) {
                 ApplicationManager.getApplication().runWriteAction {
                     val psiFile = FileTemplateUtil.createFromTemplate(
-                        fileTemplate,
-                        fileName,
-                        null,
-                        targetPsiDir
+                        fileTemplate, fileName, null, targetPsiDir
                     )
                     if ((psiFile as PsiFile).virtualFile != null) {
-                        FileEditorManager.getInstance(project)
-                            .openFile(psiFile.virtualFile, true)
+                        FileEditorManager.getInstance(project).openFile(psiFile.virtualFile, true)
+                        ProjectView.getInstance(project).select(psiFile, psiFile.virtualFile, true)
                     }
                 }
             }
