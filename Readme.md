@@ -34,7 +34,7 @@ The goto file dialog is modified to show the new file names
 
 ## Todo
 
-- [ ] Add a setting toggle nesting
+- [x] Add a setting toggle nesting
 - [ ] Handle layout files
 - [ ] Handle routes with params
 - [x] Extend file search

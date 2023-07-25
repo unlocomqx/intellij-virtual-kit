@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Extract generateIcon">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/settings/AppSettingsConfigurable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/settings/AppSettingsConfigurable.kt" afterDir="false" />
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Add comments">
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -530,11 +529,18 @@
       <option name="project" value="LOCAL" />
       <updated>1690260532066</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Add comments">
+      <option name="closed" value="true" />
+      <created>1690262525798</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1690262525798</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Skip NestingTreeNode" />
     <MESSAGE value="Remove tree structure provider" />
     <MESSAGE value="Remove unused" />
     <MESSAGE value="Remove comment" />
@@ -559,7 +565,8 @@
     <MESSAGE value="Improve file search" />
     <MESSAGE value="Remove TouchedFiles" />
     <MESSAGE value="Extract generateIcon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extract generateIcon" />
+    <MESSAGE value="Add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
