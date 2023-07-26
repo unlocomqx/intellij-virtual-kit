@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="wip: get dir name">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/data/TouchedFiles.kt" beforeDir="false" />
-    </list>
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Remove unused class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -276,14 +272,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Save workspace">
-      <option name="closed" value="true" />
-      <created>1690086601344</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1690086601344</updated>
     </task>
     <task id="LOCAL-00022" summary="Save workspace">
       <option name="closed" value="true" />
@@ -669,11 +657,18 @@
       <option name="project" value="LOCAL" />
       <updated>1690313947043</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Remove unused class">
+      <option name="closed" value="true" />
+      <created>1690329739684</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1690329739684</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Extract generateIcon" />
     <MESSAGE value="Add comments" />
     <MESSAGE value="Check &quot;Add a setting toggle nesting&quot;" />
     <MESSAGE value="Remove unused" />
@@ -698,7 +693,8 @@
     <MESSAGE value="Save" />
     <MESSAGE value="Select file in project view" />
     <MESSAGE value="Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
+    <MESSAGE value="Remove unused class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unused class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -715,23 +711,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt</url>
-          <line>27</line>
+          <line>21</line>
           <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt</url>
-          <line>23</line>
-          <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2023.1.4/bbba795f05891f5026821fbc8a36cc17476e86f4/ideaIC-2023.1.4-sources.jar!/com/intellij/ide/util/gotoByName/DefaultFileNavigationContributor.java</url>
           <line>42</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2023.1.4/bbba795f05891f5026821fbc8a36cc17476e86f4/ideaIC-2023.1.4-sources.jar!/com/intellij/ide/fileTemplates/actions/CreateFromTemplateGroup.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2023.1.4/bbba795f05891f5026821fbc8a36cc17476e86f4/ideaIC-2023.1.4-sources.jar!/com/intellij/ide/fileTemplates/DefaultTemplatePropertiesProvider.java</url>
