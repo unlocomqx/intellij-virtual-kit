@@ -41,8 +41,6 @@
                 id="net.prestalife.svirtual.settings.AppSettingsConfigurable"
                 displayName="VirtualKit Settings"/>
 
-        <defaultTemplatePropertiesProvider
-                implementation="net.prestalife.svirtual.SvirtualDefaultTemplatePropertiesProvider"/>
         <createFromTemplateActionReplacer
                 implementation="net.prestalife.svirtual.SvirtualCreateFromTemplateActionReplacer"/>
     </extensions>
