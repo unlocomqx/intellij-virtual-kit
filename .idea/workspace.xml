@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Save">
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Bump">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/Icons.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/Icons.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,22 +275,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00024" summary="wip: add file search">
-      <option name="closed" value="true" />
-      <created>1690091841026</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1690091841026</updated>
-    </task>
-    <task id="LOCAL-00025" summary="wip: add file search">
-      <option name="closed" value="true" />
-      <created>1690131257691</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1690131257691</updated>
     </task>
     <task id="LOCAL-00026" summary="Add readme">
       <option name="closed" value="true" />
@@ -668,11 +652,26 @@
       <option name="project" value="LOCAL" />
       <updated>1690371095440</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Fix icons">
+      <option name="closed" value="true" />
+      <created>1690402379704</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1690402379704</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Bump">
+      <option name="closed" value="true" />
+      <created>1690402394351</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1690402394351</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add comments" />
     <MESSAGE value="Check &quot;Add a setting toggle nesting&quot;" />
     <MESSAGE value="Remove unused" />
     <MESSAGE value="Add debug log" />
@@ -692,12 +691,13 @@
     <MESSAGE value="Update icon" />
     <MESSAGE value="Open new file" />
     <MESSAGE value="Update url" />
-    <MESSAGE value="Bump" />
     <MESSAGE value="Select file in project view" />
     <MESSAGE value="Refactor" />
     <MESSAGE value="Remove unused class" />
     <MESSAGE value="Save" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save" />
+    <MESSAGE value="Fix icons" />
+    <MESSAGE value="Bump" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bump" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

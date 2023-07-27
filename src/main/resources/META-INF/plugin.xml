@@ -15,8 +15,17 @@
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    Display an alternative SvelteKit file tree for easier navigation
-  ]]></description>
+    <p>Change the displayed names of SvelteKit file for easier navigation and route identification.</p>
+
+    <p>This plugin changes the displayed names of SvelteKit files to make it clearer which file belongs to which route.</p>
+    <ul>
+        <li>+page.svelte → {route}.svelte</li>
+        <li>+page.ts → {route}.ts</li>
+        <li>+page.server.ts → {route}.server.ts</li>
+    </ul>
+    <p>The same will be done to layout files.</p>
+    <p>This will solve the issue of having many files with the same name, thus improving file navigation.</p>
+]]></description>
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
