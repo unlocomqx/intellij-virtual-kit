@@ -13,6 +13,6 @@ class SvirtualEditorTabTitleProvider : EditorTabTitleProvider {
             return null
         }
 
-        return SvirtualFile.generateName(file)
+        return SvirtualFile.generateNameFromFile(file)
     }
 }

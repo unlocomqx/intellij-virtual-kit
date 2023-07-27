@@ -4,9 +4,12 @@ import com.intellij.ide.fileTemplates.CreateFromTemplateActionReplacer
 import com.intellij.ide.fileTemplates.FileTemplate
 import com.intellij.ide.fileTemplates.FileTemplateUtil
 import com.intellij.ide.projectView.ProjectView
+import com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode
+import com.intellij.ide.projectView.impl.nodes.PsiFileNode
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
+import com.intellij.openapi.actionSystem.DataKey
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.fileEditor.FileEditorManager
 import com.intellij.openapi.ui.Messages
@@ -24,8 +27,33 @@ class SvirtualCreateFromTemplateActionReplacer : CreateFromTemplateActionReplace
         return CreateSvelteKitFileAction(fileTemplate, filename, icon)
     }
 
-    class CreateSvelteKitFileAction(private val fileTemplate: FileTemplate?, text: String, icon: Icon) :
-        AnAction(text, null, icon) {
+    class CreateSvelteKitFileAction(
+        private val fileTemplate: FileTemplate?, private val filename: String, icon: Icon
+    ) : AnAction(filename, null, icon) {
+
+        override fun update(e: AnActionEvent) {
+            val selectedItems = e.getData(DataKey.create<Any>("selectedItems"))
+            val selectedItem = (if (selectedItems is Array<*>) selectedItems.firstOrNull() else selectedItems) ?: return
+
+            if (selectedItem is PsiDirectoryNode) {
+                if (selectedItem.virtualFile != null && fileTemplate?.name != null) {
+                    val text = SvirtualFile.generateNameFromFilename(
+                        selectedItem.virtualFile, filename, fileTemplate.extension
+                    )
+                    if (text != null) e.presentation.text = text
+                }
+            } else if (selectedItem is PsiFileNode) {
+                if (selectedItem.virtualFile != null && fileTemplate?.name != null) {
+                    val text = SvirtualFile.generateNameFromFilename(
+                        selectedItem.virtualFile!!.parent, filename, fileTemplate.extension
+                    )
+                    if (text != null) e.presentation.text = text
+                }
+            }
+
+            super.update(e)
+        }
+
         override fun actionPerformed(e: AnActionEvent) {
             val project = e.project
             if (project == null) {

@@ -10,11 +10,24 @@ import javax.swing.Icon
 class SvirtualFile {
 
     companion object {
-        fun generateName(file: VirtualFile): String? {
+        fun generateNameFromFile(file: VirtualFile): String? {
             val name = file.name
             val extension = file.extension
+            val dir = file.parent
 
-            val route = getRoute(file) ?: return null
+            if (extension.isNullOrEmpty()) {
+                return null
+            }
+
+            return generateNameFromFilename(dir, name, extension)
+        }
+
+        fun generateNameFromFilename(
+            dir: VirtualFile?,
+            name: String,
+            extension: String
+        ): String? {
+            val route = getRoute(dir) ?: return null
 
             if (name == "+page.svelte") {
                 return "$route.svelte"
@@ -47,8 +60,9 @@ class SvirtualFile {
             return null
         }
 
-        private fun getRoute(file: VirtualFile): String? {
-            var parent = file.parent ?: return null
+        private fun getRoute(dir: VirtualFile?): String? {
+            var parent: VirtualFile = dir ?: return null
+
             var routeName = sanitizeName(parent.name)
 
             while (routeName.startsWith('[')) {

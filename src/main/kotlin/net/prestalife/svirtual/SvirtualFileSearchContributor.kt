@@ -43,7 +43,7 @@ class SvirtualFileSearchContributor : ChooseByNameContributorEx {
         ).map { FilenameIndex.getVirtualFilesByName(it, scope) }.flatten()
 
         files.forEach {
-            val name = SvirtualFile.generateName(it)
+            val name = SvirtualFile.generateNameFromFile(it)
             if (name != null) {
                 names.add(name)
                 filesMap[name] = it

@@ -13,7 +13,7 @@ class SvirtualProjectViewNodeDecorator : ProjectViewNodeDecorator {
             return
         }
 
-        val newName = SvirtualFile.generateName(node.virtualFile!!)
+        val newName = SvirtualFile.generateNameFromFile(node.virtualFile!!)
 
         if (newName != null) {
             presentation.presentableText = newName

@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Bump">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualEditorTabTitleProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualEditorTabTitleProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualFileSearchContributor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualFileSearchContributor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualProjectViewNodeDecorator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualProjectViewNodeDecorator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/helpers/SvirtualFile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/helpers/SvirtualFile.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,22 +279,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Add readme">
-      <option name="closed" value="true" />
-      <created>1690131265267</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1690131265267</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Add description">
-      <option name="closed" value="true" />
-      <created>1690131362075</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1690131362075</updated>
     </task>
     <task id="LOCAL-00028" summary="Add features">
       <option name="closed" value="true" />
@@ -668,11 +656,26 @@
       <option name="project" value="LOCAL" />
       <updated>1690402394351</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Update description">
+      <option name="closed" value="true" />
+      <created>1690451961562</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1690451961562</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Bump">
+      <option name="closed" value="true" />
+      <created>1690452033714</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1690452033714</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Check &quot;Add a setting toggle nesting&quot;" />
     <MESSAGE value="Remove unused" />
     <MESSAGE value="Add debug log" />
     <MESSAGE value="Handle +server.js files" />
@@ -696,6 +699,7 @@
     <MESSAGE value="Remove unused class" />
     <MESSAGE value="Save" />
     <MESSAGE value="Fix icons" />
+    <MESSAGE value="Update description" />
     <MESSAGE value="Bump" />
     <option name="LAST_COMMIT_MESSAGE" value="Bump" />
   </component>
@@ -703,33 +707,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualFileSystem.kt</url>
-          <line>29</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualFileSystem.kt</url>
-          <line>21</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/SvirtualCreateFromTemplateActionReplacer.kt</url>
-          <line>21</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2023.1.4/bbba795f05891f5026821fbc8a36cc17476e86f4/ideaIC-2023.1.4-sources.jar!/com/intellij/ide/util/gotoByName/DefaultFileNavigationContributor.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2023.1.4/bbba795f05891f5026821fbc8a36cc17476e86f4/ideaIC-2023.1.4-sources.jar!/com/intellij/ide/fileTemplates/DefaultTemplatePropertiesProvider.java</url>
-          <line>23</line>
-          <properties class="com.intellij.ide.fileTemplates.DefaultTemplatePropertiesProvider" method="fillProperties">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="53" />
+          <line>34</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
