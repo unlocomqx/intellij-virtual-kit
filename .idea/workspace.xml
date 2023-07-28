@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Save">
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Remove unused import">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/icons/page-js.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icons/page-js.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/icons/page-ts.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icons/page-ts.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,30 +278,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Improve file search">
-      <option name="closed" value="true" />
-      <created>1690238496700</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1690238496700</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Remove TouchedFiles">
-      <option name="closed" value="true" />
-      <created>1690238656901</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1690238656901</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Extract generateIcon">
-      <option name="closed" value="true" />
-      <created>1690260532066</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1690260532066</updated>
     </task>
     <task id="LOCAL-00042" summary="Add comments">
       <option name="closed" value="true" />
@@ -670,7 +647,31 @@
       <option name="project" value="LOCAL" />
       <updated>1690544646814</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Bump">
+      <option name="closed" value="true" />
+      <created>1690560973019</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1690560973019</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Save">
+      <option name="closed" value="true" />
+      <created>1690560977025</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1690560977025</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Remove unused import">
+      <option name="closed" value="true" />
+      <created>1690561164334</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1690561164334</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -710,7 +711,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="wip: Add file templates" />
     <MESSAGE value="Add files templates" />
     <MESSAGE value="Update workspace" />
     <MESSAGE value="Change plugin name" />
@@ -731,11 +731,12 @@
     <MESSAGE value="Avoid using deprecated fn" />
     <MESSAGE value="Refactor settings" />
     <MESSAGE value="Update icons" />
-    <MESSAGE value="Bump" />
     <MESSAGE value="Revert Icons" />
     <MESSAGE value="Revert settings" />
+    <MESSAGE value="Bump" />
     <MESSAGE value="Save" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save" />
+    <MESSAGE value="Remove unused import" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unused import" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
