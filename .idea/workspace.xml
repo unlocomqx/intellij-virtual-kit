@@ -144,7 +144,7 @@
       <recent name="net.prestalife.svirtual.settings" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.svirtual [publishPlugin]">
+  <component name="RunManager" selected="Gradle.Run Plugin">
     <configuration name="svirtual [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
