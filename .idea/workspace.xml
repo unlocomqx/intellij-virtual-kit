@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Bump">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/icons/page-js.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icons/page-js.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/icons/page-ts.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icons/page-ts.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/icons/server.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icons/server.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +143,7 @@
       <recent name="net.prestalife.svirtual.settings" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Run Plugin">
+  <component name="RunManager" selected="Gradle.svirtual [publishPlugin]">
     <configuration name="svirtual [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -280,22 +277,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Remove search contributor">
-      <option name="closed" value="true" />
-      <created>1690209562624</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1690209562624</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Add file search">
-      <option name="closed" value="true" />
-      <created>1690216302194</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1690216302194</updated>
     </task>
     <task id="LOCAL-00035" summary="Rename variables">
       <option name="closed" value="true" />
@@ -673,11 +654,26 @@
       <option name="project" value="LOCAL" />
       <updated>1690501203051</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Update icons">
+      <option name="closed" value="true" />
+      <created>1690503753999</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1690503753999</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Bump">
+      <option name="closed" value="true" />
+      <created>1690503769735</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1690503769735</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactor code" />
     <MESSAGE value="Separate page and layout" />
     <MESSAGE value="Remove comment" />
     <MESSAGE value="wip: Add file templates" />
@@ -701,6 +697,7 @@
     <MESSAGE value="Target IU" />
     <MESSAGE value="Avoid using deprecated fn" />
     <MESSAGE value="Refactor settings" />
+    <MESSAGE value="Update icons" />
     <MESSAGE value="Bump" />
     <option name="LAST_COMMIT_MESSAGE" value="Bump" />
   </component>
