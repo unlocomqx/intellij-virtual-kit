@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Avoid using deprecated fn">
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Bump">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/settings/AppSettingsConfigurable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/settings/AppSettingsConfigurable.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/net/prestalife/svirtual/settings/AppSettingsState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/icons/page-js.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icons/page-js.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/icons/page-ts.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icons/page-ts.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/icons/server.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icons/server.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,21 +111,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/unloco/code/jetbrains/svirtual/svirtual/src/main/resources/META-INF",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "editor.preferences.folding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/unloco/code/jetbrains/svirtual/svirtual/src/main/resources/META-INF&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
@@ -279,22 +280,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00031" summary="wip: Refresh files">
-      <option name="closed" value="true" />
-      <created>1690153474136</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1690153474136</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Add SvirtualFileSearchContributor">
-      <option name="closed" value="true" />
-      <created>1690209529171</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1690209529171</updated>
     </task>
     <task id="LOCAL-00033" summary="Remove search contributor">
       <option name="closed" value="true" />
@@ -672,11 +657,26 @@
       <option name="project" value="LOCAL" />
       <updated>1690498085091</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Refactor settings">
+      <option name="closed" value="true" />
+      <created>1690501186930</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1690501186930</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Bump">
+      <option name="closed" value="true" />
+      <created>1690501203051</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1690501203051</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Handle layout files" />
     <MESSAGE value="Refactor code" />
     <MESSAGE value="Separate page and layout" />
     <MESSAGE value="Remove comment" />
@@ -697,11 +697,12 @@
     <MESSAGE value="Save" />
     <MESSAGE value="Fix icons" />
     <MESSAGE value="Update description" />
-    <MESSAGE value="Bump" />
     <MESSAGE value="Make template options text dynamic" />
     <MESSAGE value="Target IU" />
     <MESSAGE value="Avoid using deprecated fn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avoid using deprecated fn" />
+    <MESSAGE value="Refactor settings" />
+    <MESSAGE value="Bump" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bump" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
