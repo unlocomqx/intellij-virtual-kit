@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Bump">
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Save">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,14 +278,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Rename variables">
-      <option name="closed" value="true" />
-      <created>1690216351650</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1690216351650</updated>
     </task>
     <task id="LOCAL-00036" summary="Add goto file feature topic">
       <option name="closed" value="true" />
@@ -670,7 +663,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690503769735</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Save">
+      <option name="closed" value="true" />
+      <created>1690503911544</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1690503911544</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -690,7 +691,6 @@
     <MESSAGE value="Select file in project view" />
     <MESSAGE value="Refactor" />
     <MESSAGE value="Remove unused class" />
-    <MESSAGE value="Save" />
     <MESSAGE value="Fix icons" />
     <MESSAGE value="Update description" />
     <MESSAGE value="Make template options text dynamic" />
@@ -699,7 +699,8 @@
     <MESSAGE value="Refactor settings" />
     <MESSAGE value="Update icons" />
     <MESSAGE value="Bump" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bump" />
+    <MESSAGE value="Save" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
