@@ -1,20 +1,16 @@
 package net.prestalife.svirtual.settings
 
-import com.intellij.openapi.application.ApplicationManager
-import com.intellij.openapi.components.PersistentStateComponent
-import com.intellij.openapi.components.State
-import com.intellij.openapi.components.Storage
 import com.intellij.openapi.options.Configurable
 import com.intellij.openapi.project.ProjectManager
-import com.intellij.openapi.ui.DialogPanel
-import com.intellij.ui.dsl.builder.bindSelected
-import com.intellij.ui.dsl.builder.panel
-import com.intellij.util.xmlb.XmlSerializerUtil
+import com.intellij.ui.components.JBCheckBox
+import com.intellij.util.ui.FormBuilder
+import com.intellij.util.ui.UI
 import org.jetbrains.annotations.Nls
 import org.jetbrains.annotations.NotNull
 import org.jetbrains.annotations.Nullable
-import javax.swing.JCheckBox
 import javax.swing.JComponent
+import javax.swing.JPanel
+
 
 /**
  * Provides controller functionality for application settings.
@@ -36,20 +32,32 @@ class AppSettingsConfigurable : Configurable {
     @Nullable
     override fun createComponent(): JComponent {
         mySettingsComponent = AppSettingsComponent()
-        return mySettingsComponent!!.myPanel
+        return mySettingsComponent!!.panel
     }
 
     override fun isModified(): Boolean {
-        return mySettingsComponent!!.myPanel.isModified()
+        val settings = AppSettingsState.instance
+        return mySettingsComponent!!.nestRouteFiles != settings.nestRouteFiles ||
+                mySettingsComponent!!.modifyProjectTree != settings.modifyProjectTree ||
+                mySettingsComponent!!.modifyTabsTitles != settings.modifyTabsTitles ||
+                mySettingsComponent!!.modifyFileIcons != settings.modifyFileIcons
     }
 
     override fun apply() {
-        mySettingsComponent!!.myPanel.apply()
+        val settings = AppSettingsState.instance
+        settings.nestRouteFiles = mySettingsComponent!!.nestRouteFiles
+        settings.modifyProjectTree = mySettingsComponent!!.modifyProjectTree
+        settings.modifyFileIcons = mySettingsComponent!!.modifyFileIcons
+        settings.modifyTabsTitles = mySettingsComponent!!.modifyTabsTitles
         ProjectManager.getInstance().openProjects.forEach { ProjectManager.getInstance().reloadProject(it) }
     }
 
     override fun reset() {
-        mySettingsComponent!!.myPanel.reset()
+        val settings = AppSettingsState.instance
+        mySettingsComponent!!.nestRouteFiles = settings.nestRouteFiles
+        mySettingsComponent!!.modifyProjectTree = settings.modifyProjectTree
+        mySettingsComponent!!.modifyFileIcons = settings.modifyFileIcons
+        mySettingsComponent!!.modifyTabsTitles = settings.modifyTabsTitles
     }
 
     override fun disposeUIResources() {
@@ -58,62 +66,58 @@ class AppSettingsConfigurable : Configurable {
 }
 
 /**
- * Supports creating and managing a [DialogPanel] for the Settings Dialog.
+ * Supports creating and managing a [JPanel] for the Settings Dialog.
  */
 class AppSettingsComponent {
-    val myPanel: DialogPanel
-    private lateinit var nestRouteFilesCheckbox: JCheckBox
+    val panel: JPanel
+    private val nestRouteFilesCheckbox = JBCheckBox("Nest route files")
+    private val modifyProjectTreeCheckbox = JBCheckBox("Modify project tree")
+    private val modifyFileIconsCheckbox = JBCheckBox("Modify file icons")
+    private val modifyTabsTitlesCheckbox = JBCheckBox("Modify tabs titles")
 
     init {
-        val state = AppSettingsState.instance
-        myPanel = panel {
-            row {
-                checkBox("Nest route files").comment("Nest +page.server.js and +page.js under +page.svelte. May require restart.")
-                    .bindSelected(state::nestRouteFiles)
-                    .component.apply { nestRouteFilesCheckbox = this }
-            }
-            row {
-                checkBox("Modify project tree").comment("Rename route files to {route}.svelte and {route}.server.js etc...")
-                    .bindSelected(state::modifyProjectTree)
-            }
-            row {
-                checkBox("Modify file icons").comment("Display different icons for route file types")
-                    .bindSelected(state::modifyFileIcons)
-            }
-            row {
-                checkBox("Modify tabs titles").bindSelected(state::modifyTabsTitles)
-            }
-        }
+        panel = FormBuilder.createFormBuilder()
+            .addComponent(
+                UI.PanelFactory.panel(nestRouteFilesCheckbox)
+                    .withComment("Nest +page.server.js and +page.js under +page.svelte. May require restart.")
+                    .createPanel(), 1
+            )
+            .addComponent(
+                UI.PanelFactory.panel(modifyProjectTreeCheckbox)
+                    .withComment("Rename route files to {route}.svelte and {route}.server.js etc...").createPanel(), 1
+            ).addComponent(
+                UI.PanelFactory.panel(modifyFileIconsCheckbox)
+                    .withComment("Display different icons for route file types").createPanel(), 1
+            )
+            .addComponent(modifyTabsTitlesCheckbox, 1).addComponentFillVertically(JPanel(), 0)
+            .panel
     }
-
 
     val preferredFocusedComponent: JComponent
         get() = nestRouteFilesCheckbox
+
+    @get:NotNull
+    var nestRouteFiles: Boolean
+        get() = nestRouteFilesCheckbox.isSelected
+        set(state) {
+            nestRouteFilesCheckbox.isSelected = state
+        }
+    var modifyProjectTree: Boolean
+        get() = modifyProjectTreeCheckbox.isSelected
+        set(state) {
+            modifyProjectTreeCheckbox.isSelected = state
+        }
+
+    var modifyFileIcons: Boolean
+        get() = modifyFileIconsCheckbox.isSelected
+        set(state) {
+            modifyFileIconsCheckbox.isSelected = state
+        }
+
+    var modifyTabsTitles: Boolean
+        get() = modifyTabsTitlesCheckbox.isSelected
+        set(state) {
+            modifyTabsTitlesCheckbox.isSelected = state
+        }
 }
 
-@State(
-    name = "net.prestalife.svirtual.settings.AppSettingsState",
-    storages = [Storage(value = "VirtualKitPlugin.xml")]
-)
-class AppSettingsState : PersistentStateComponent<AppSettingsState> {
-    var nestRouteFiles: Boolean = true
-    var modifyProjectTree: Boolean = true
-    var modifyFileIcons: Boolean = true
-    var modifyTabsTitles: Boolean = true
-
-    @Nullable
-    override fun getState(): AppSettingsState {
-        return this
-    }
-
-    override fun loadState(@NotNull state: AppSettingsState) {
-        XmlSerializerUtil.copyBean(state, this)
-    }
-
-    companion object {
-        val instance: AppSettingsState
-            get() = ApplicationManager.getApplication().getService(
-                AppSettingsState::class.java
-            )
-    }
-}
