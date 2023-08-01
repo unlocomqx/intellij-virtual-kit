@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Avoid internal fn" />
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Bump">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +144,7 @@
       <recent name="net.prestalife.svirtual.settings" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Run Plugin">
+  <component name="RunManager" selected="Gradle.svirtual [publishPlugin]">
     <configuration name="svirtual [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -275,22 +278,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Remove unused">
-      <option name="closed" value="true" />
-      <created>1690262684998</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1690262684998</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Add debug log">
-      <option name="closed" value="true" />
-      <created>1690263119618</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1690263119618</updated>
     </task>
     <task id="LOCAL-00046" summary="Handle +server.js files">
       <option name="closed" value="true" />
@@ -668,7 +655,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690562627557</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Remove VFS">
+      <option name="closed" value="true" />
+      <created>1690643343123</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1690643343123</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Bump">
+      <option name="closed" value="true" />
+      <created>1690643354492</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1690643354492</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -708,7 +711,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update workspace" />
     <MESSAGE value="Change plugin name" />
     <MESSAGE value="Delete unused class" />
     <MESSAGE value="Update readme" />
@@ -728,12 +730,13 @@
     <MESSAGE value="Refactor settings" />
     <MESSAGE value="Revert Icons" />
     <MESSAGE value="Revert settings" />
-    <MESSAGE value="Bump" />
     <MESSAGE value="Save" />
     <MESSAGE value="Remove unused import" />
     <MESSAGE value="Update icons" />
     <MESSAGE value="Avoid internal fn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avoid internal fn" />
+    <MESSAGE value="Remove VFS" />
+    <MESSAGE value="Bump" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bump" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
