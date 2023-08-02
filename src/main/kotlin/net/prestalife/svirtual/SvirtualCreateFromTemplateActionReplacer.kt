@@ -9,7 +9,6 @@ import com.intellij.ide.projectView.impl.nodes.PsiFileNode
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
-import com.intellij.openapi.actionSystem.DataKey
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.fileEditor.FileEditorManager
 import com.intellij.openapi.ui.Messages
@@ -32,7 +31,7 @@ class SvirtualCreateFromTemplateActionReplacer : CreateFromTemplateActionReplace
     ) : AnAction(filename, null, icon) {
 
         override fun update(e: AnActionEvent) {
-            val selectedItems = e.getData(DataKey.create<Any>("selectedItems"))
+            val selectedItems = e.getData(com.intellij.openapi.actionSystem.PlatformCoreDataKeys.SELECTED_ITEMS)
             val selectedItem = (if (selectedItems is Array<*>) selectedItems.firstOrNull() else selectedItems) ?: return
 
             if (selectedItem is PsiDirectoryNode) {

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Bump">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-    </list>
+    <list default="true" id="10948448-beea-47ee-a6d3-8abde0adfb9d" name="Changes" comment="Change name in Readme" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -278,14 +275,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690061379945</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Handle +server.js files">
-      <option name="closed" value="true" />
-      <created>1690264802985</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1690264802985</updated>
     </task>
     <task id="LOCAL-00047" summary="Handle layout files">
       <option name="closed" value="true" />
@@ -671,7 +660,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690643354492</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Change name in Readme">
+      <option name="closed" value="true" />
+      <created>1690922974994</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1690922974994</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -711,7 +708,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change plugin name" />
     <MESSAGE value="Delete unused class" />
     <MESSAGE value="Update readme" />
     <MESSAGE value="Change target" />
@@ -736,7 +732,8 @@
     <MESSAGE value="Avoid internal fn" />
     <MESSAGE value="Remove VFS" />
     <MESSAGE value="Bump" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bump" />
+    <MESSAGE value="Change name in Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change name in Readme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
