@@ -38,7 +38,7 @@ class SvirtualFile {
             }
 
             if (name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
-                return "$route.server.ts"
+                return "$route.server.$extension"
             }
 
             if (name.matches(Regex("\\+page\\.(ts|js)"))) {
@@ -50,7 +50,7 @@ class SvirtualFile {
             }
 
             if (name.matches(Regex("\\+layout\\.server\\.(ts|js)"))) {
-                return "$route.layout.server.ts"
+                return "$route.layout.server.$extension"
             }
 
             if (name.matches(Regex("\\+layout\\.(ts|js)"))) {
