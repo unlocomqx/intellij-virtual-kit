@@ -29,12 +29,12 @@ class SvirtualFile {
         ): String? {
             val route = getRoute(dir) ?: return null
 
-            if (name == "+page.svelte") {
-                return "$route.svelte"
+            if (name.matches(Regex("\\+page(@.*)?\\.svelte"))) {
+                return name.replace("+page", route)
             }
 
-            if (name == "+layout.svelte") {
-                return "$route.layout.svelte"
+            if (name.matches(Regex("\\+layout(@.*)?\\.svelte"))) {
+                return name.replace("+layout", "$route.layout")
             }
 
             if (name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
@@ -100,11 +100,11 @@ class SvirtualFile {
         fun generateIcon(filename: String): Icon? {
             val extension = filename.substringAfterLast('.')
 
-            if (filename == "+page.svelte") {
+            if (filename.matches(Regex("\\+page(@.*)?\\.svelte"))) {
                 return Icons.Page
             }
 
-            if (filename == "+layout.svelte") {
+            if (filename.matches(Regex("\\+layout(@.*)?\\.svelte"))) {
                 return Icons.Layout
             }
 
