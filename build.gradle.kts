@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "net.prestalife"
-version = "1.3.5"
+version = "1.3.6"
 
 repositories {
     mavenCentral()
