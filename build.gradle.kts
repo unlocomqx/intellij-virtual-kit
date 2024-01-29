@@ -1,3 +1,5 @@
+fun properties(key: String) = project.findProperty(key).toString()
+
 plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "1.8.21"
@@ -5,7 +7,7 @@ plugins {
 }
 
 group = "net.prestalife"
-version = "1.3.6"
+version = properties("pluginVersion")
 
 repositories {
     mavenCentral()
@@ -14,7 +16,7 @@ repositories {
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
-    version.set("2023.1.4")
+    version.set("LATEST-EAP-SNAPSHOT")
     type.set("PS") // Target IDE Platform
 
     plugins.set(listOf(/* Plugin Dependencies */))
@@ -32,7 +34,7 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("222")
-        untilBuild.set("233.*")
+        untilBuild.set(properties("pluginUntilBuild"))
     }
 
     signPlugin {
