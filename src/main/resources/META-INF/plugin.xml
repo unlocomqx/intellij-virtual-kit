@@ -23,7 +23,7 @@
         <li>+page.ts → {route}.ts</li>
         <li>+page.server.ts → {route}.server.ts</li>
     </ul>
-    <p>The same will be done to layout files.</p>
+    <p>The same will be done to layout and error files.</p>
     <p>This will solve the issue of having many files with the same name, thus improving file navigation.</p>
 ]]></description>
 
