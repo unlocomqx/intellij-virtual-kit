@@ -1,3 +1,7 @@
+import org.jetbrains.changelog.Changelog
+import org.jetbrains.changelog.ChangelogSectionUrlBuilder
+import org.jetbrains.changelog.date
+
 fun properties(key: String) = project.findProperty(key).toString()
 
 plugins {
@@ -62,7 +66,7 @@ changelog {
     version.set(properties("pluginVersion"))
     path.set(file("CHANGELOG.md").canonicalPath)
     header.set(provider { "[${version.get()}] - ${date()}" })
-    headerParserRegex.set("""(\d+\.\d+)""".toRegex())
+    headerParserRegex.set("""(\d+\.\d+.\d+)""".toRegex())
     introduction.set(
         """
         Change the displayed names of SvelteKit files for easier navigation and route identification.
