@@ -22,4 +22,5 @@ object Icons {
     val PageJS = load("icons/page-js.svg")
 
     val Layout = load("icons/layout.svg")
+    val Error = load("icons/error.svg")
 }

@@ -37,6 +37,10 @@ class SvirtualFile {
                 return name.replace("+layout", "$route.layout")
             }
 
+            if (name.matches(Regex("\\+error(@.*)?\\.svelte"))) {
+                return name.replace("+error", "$route.error")
+            }
+
             if (name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
                 return "$route.server.$extension"
             }
@@ -106,6 +110,10 @@ class SvirtualFile {
 
             if (filename.matches(Regex("\\+layout(@.*)?\\.svelte"))) {
                 return Icons.Layout
+            }
+
+            if (filename.matches(Regex("\\+error(@.*)?\\.svelte"))) {
+                return Icons.Error
             }
 
             if (filename.matches(Regex("\\+(page|layout)\\.server\\.(ts|js)"))) {

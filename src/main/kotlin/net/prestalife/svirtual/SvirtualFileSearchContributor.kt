@@ -39,7 +39,9 @@ class SvirtualFileSearchContributor : ChooseByNameContributorEx {
             "+layout.server.ts",
             "+layout.server.js",
             "+layout.ts",
-            "+layout.js"
+            "+layout.js",
+
+            "+error.svelte",
         ).map { FilenameIndex.getVirtualFilesByName(it, scope) }.flatten()
 
         files.forEach {

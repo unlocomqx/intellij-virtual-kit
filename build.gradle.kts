@@ -4,6 +4,7 @@ plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "1.8.21"
     id("org.jetbrains.intellij") version "1.13.3"
+    id("org.jetbrains.changelog") version "2.2.0"
 }
 
 group = "net.prestalife"
@@ -35,6 +36,15 @@ tasks {
     patchPluginXml {
         sinceBuild.set("222")
         untilBuild.set(properties("pluginUntilBuild"))
+        changeNotes.set(provider {
+            changelog.renderItem(
+                changelog
+                    .getUnreleased()
+                    .withHeader(false)
+                    .withEmptySections(false),
+                Changelog.OutputType.HTML
+            )
+        })
     }
 
     signPlugin {
@@ -46,4 +56,27 @@ tasks {
     publishPlugin {
         token.set(System.getenv("PUBLISH_TOKEN"))
     }
+}
+
+changelog {
+    version.set(properties("pluginVersion"))
+    path.set(file("CHANGELOG.md").canonicalPath)
+    header.set(provider { "[${version.get()}] - ${date()}" })
+    headerParserRegex.set("""(\d+\.\d+)""".toRegex())
+    introduction.set(
+        """
+        Change the displayed names of SvelteKit files for easier navigation and route identification.
+        
+        - Route files are respresented by name
+        - Similar files are nested under a common parent
+        - Tabs labels are modified to reflect their corresponding route
+        """.trimIndent()
+    )
+    itemPrefix.set("-")
+    keepUnreleasedSection.set(true)
+    unreleasedTerm.set("[Unreleased]")
+    groups.set(listOf("Added", "Changed", "Deprecated", "Removed", "Fixed", "Security"))
+    lineSeparator.set("\n")
+    combinePreReleases.set(true)
+    sectionUrlBuilder.set(ChangelogSectionUrlBuilder { repositoryUrl, currentVersion, previousVersion, isUnreleased -> "foo" })
 }
