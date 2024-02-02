@@ -9,6 +9,8 @@ An Intellij plugin to modify the SvelteKit project tree to make it easier to nav
 - +page.svelte is modified to {route}.svelte
 - +page.server.js is modified to {route}.server.js
 - +page.js is modified to {route}.js
+- +layout.svelte is modified to {route}.layout.svelte
+- +error.svelte is modified to {route}.error.svelte
 
 Same for ts files
 
