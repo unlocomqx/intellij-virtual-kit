@@ -4,6 +4,7 @@ import com.intellij.openapi.options.Configurable
 import com.intellij.openapi.project.ProjectManager
 import com.intellij.ui.components.JBCheckBox
 import com.intellij.util.ui.FormBuilder
+import com.intellij.util.ui.JBUI
 import com.intellij.util.ui.UI
 import org.jetbrains.annotations.Nls
 import org.jetbrains.annotations.NotNull
@@ -78,18 +79,29 @@ class AppSettingsComponent {
     init {
         panel = FormBuilder.createFormBuilder()
             .addComponent(
-                UI.PanelFactory.panel(nestRouteFilesCheckbox)
-                    .withComment("Nest +page.server.js and +page.js under +page.svelte. May require restart.")
-                    .createPanel(), 1
+                nestRouteFilesCheckbox,
             )
+            .addTooltip("Nest +page.server.js and +page.js under +page.svelte. May require restart.")
+            .addSeparator()
+
             .addComponent(
-                UI.PanelFactory.panel(modifyProjectTreeCheckbox)
-                    .withComment("Rename route files to {route}.svelte and {route}.server.js etc...").createPanel(), 1
-            ).addComponent(
-                UI.PanelFactory.panel(modifyFileIconsCheckbox)
-                    .withComment("Display different icons for route file types").createPanel(), 1
+                modifyProjectTreeCheckbox,
             )
-            .addComponent(modifyTabsTitlesCheckbox, 1).addComponentFillVertically(JPanel(), 0)
+            .addTooltip("Rename route files to {route}.svelte and {route}.server.js etc...")
+            .addSeparator()
+
+
+            .addComponent(
+                modifyFileIconsCheckbox,
+            )
+            .addTooltip("Display different icons for route file types")
+            .addSeparator()
+
+
+            .addComponent(
+                modifyTabsTitlesCheckbox,
+            )
+            .addComponentFillVertically(JPanel(), 0)
             .panel
     }
 
