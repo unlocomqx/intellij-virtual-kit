@@ -1,5 +1,6 @@
 package net.prestalife.svirtual
 
+import com.intellij.openapi.util.IconLoader
 import com.intellij.ui.IconManager
 import javax.swing.Icon
 
@@ -8,7 +9,7 @@ import javax.swing.Icon
 
 object Icons {
     private fun load(path: String): Icon {
-        return IconManager.getInstance().getIcon(
+        return IconLoader.getIcon(
             path,
             Icons.javaClass.classLoader
         )
