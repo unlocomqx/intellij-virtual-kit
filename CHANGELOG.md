@@ -20,6 +20,12 @@ Change the displayed names of SvelteKit files for easier navigation and route id
 
 ### Security
 
+## (1.5.1) - 2024-02-01
+
+### Changed
+
+- Reworked icons (Thanks to @wiverson)
+
 ## (1.5.0) - 2024-02-01
 
 ### Changed
