@@ -1,11 +1,24 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+Change the displayed names of SvelteKit files for easier navigation and route identification.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+- Route files are respresented by name
+- Similar files are nested under a common parent
+- Tabs labels are modified to reflect their corresponding route
 
 ## [Unreleased]
+
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
 
 ## (1.4.0) - 2024-02-01
 

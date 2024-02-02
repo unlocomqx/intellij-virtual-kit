@@ -1,13 +1,14 @@
 import org.jetbrains.changelog.Changelog
 import org.jetbrains.changelog.ChangelogSectionUrlBuilder
 import org.jetbrains.changelog.date
+import org.jetbrains.intellij.debug
 
 fun properties(key: String) = project.findProperty(key).toString()
 
 plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "1.8.21"
-    id("org.jetbrains.intellij") version "1.13.3"
+    id("org.jetbrains.intellij") version "1.17.0"
     id("org.jetbrains.changelog") version "2.2.0"
 }
 
@@ -21,8 +22,8 @@ repositories {
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
-    version.set("LATEST-EAP-SNAPSHOT")
-    type.set("PS") // Target IDE Platform
+    version.set("2022.2")
+    type.set("IU") // Target IDE Platform
 
     plugins.set(listOf(/* Plugin Dependencies */))
 }
@@ -82,5 +83,5 @@ changelog {
     groups.set(listOf("Added", "Changed", "Deprecated", "Removed", "Fixed", "Security"))
     lineSeparator.set("\n")
     combinePreReleases.set(true)
-    sectionUrlBuilder.set(ChangelogSectionUrlBuilder { repositoryUrl, currentVersion, previousVersion, isUnreleased -> "foo" })
+//    sectionUrlBuilder.set(ChangelogSectionUrlBuilder { repositoryUrl, currentVersion, previousVersion, isUnreleased -> "foo" })
 }

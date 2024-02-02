@@ -10,7 +10,7 @@ object Icons {
     private fun load(path: String): Icon {
         return IconManager.getInstance().getIcon(
             path,
-            Icons::class.java
+            Icons.javaClass.classLoader
         )
     }
 
