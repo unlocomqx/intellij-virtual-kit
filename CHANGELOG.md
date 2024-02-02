@@ -20,14 +20,14 @@ Change the displayed names of SvelteKit files for easier navigation and route id
 
 ### Security
 
-## (1.4.0) - 2024-02-01
-
-### Added
-
-- Rename error page and change its icon
-
 ## (1.5.0) - 2024-02-01
 
 ### Changed
 
 - Reworked settings UI
+
+## (1.4.0) - 2024-02-01
+
+### Added
+
+- Rename error page and change its icon

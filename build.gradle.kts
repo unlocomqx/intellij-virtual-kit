@@ -1,3 +1,4 @@
+import org.apache.tools.ant.taskdefs.cvslib.ChangeLogTask
 import org.jetbrains.changelog.Changelog
 import org.jetbrains.changelog.ChangelogSectionUrlBuilder
 import org.jetbrains.changelog.date
@@ -43,9 +44,8 @@ tasks {
         untilBuild.set(properties("pluginUntilBuild"))
         changeNotes.set(provider {
             changelog.renderItem(
-                changelog
-                    .getUnreleased()
-                    .withHeader(false)
+                changelog.getLatest()
+                    .withHeader(true)
                     .withEmptySections(false),
                 Changelog.OutputType.HTML
             )
