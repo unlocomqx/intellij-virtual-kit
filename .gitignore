@@ -5,6 +5,7 @@ build/
 !**/src/test/**/build/
 
 ### IntelliJ IDEA ###
+.idea/.name
 .idea/copilot
 .idea/shelf
 .idea/modules.xml
