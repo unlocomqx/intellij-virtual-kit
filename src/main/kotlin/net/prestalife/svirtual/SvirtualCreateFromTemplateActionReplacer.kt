@@ -32,7 +32,7 @@ class SvirtualCreateFromTemplateActionReplacer : CreateFromTemplateActionReplace
     ) : AnAction(filename, null, icon) {
 
         override fun getActionUpdateThread(): ActionUpdateThread {
-            return ActionUpdateThread.BGT;
+            return ActionUpdateThread.BGT
         }
 
         override fun update(e: AnActionEvent) {
