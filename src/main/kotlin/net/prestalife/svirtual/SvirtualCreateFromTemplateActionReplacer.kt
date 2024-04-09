@@ -6,6 +6,7 @@ import com.intellij.ide.fileTemplates.FileTemplateUtil
 import com.intellij.ide.projectView.ProjectView
 import com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode
 import com.intellij.ide.projectView.impl.nodes.PsiFileNode
+import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
@@ -29,6 +30,10 @@ class SvirtualCreateFromTemplateActionReplacer : CreateFromTemplateActionReplace
     class CreateSvelteKitFileAction(
         private val fileTemplate: FileTemplate?, private val filename: String, icon: Icon
     ) : AnAction(filename, null, icon) {
+
+        override fun getActionUpdateThread(): ActionUpdateThread {
+            return ActionUpdateThread.BGT;
+        }
 
         override fun update(e: AnActionEvent) {
             val selectedItems = e.getData(com.intellij.openapi.actionSystem.PlatformCoreDataKeys.SELECTED_ITEMS)
