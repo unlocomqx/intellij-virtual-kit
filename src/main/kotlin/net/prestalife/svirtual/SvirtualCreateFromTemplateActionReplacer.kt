@@ -3,6 +3,8 @@ package net.prestalife.svirtual
 import com.intellij.ide.fileTemplates.CreateFromTemplateActionReplacer
 import com.intellij.ide.fileTemplates.FileTemplate
 import com.intellij.ide.fileTemplates.FileTemplateUtil
+import com.intellij.ide.fileTemplates.actions.CreateFromTemplateAction
+import com.intellij.ide.fileTemplates.impl.BundledFileTemplate
 import com.intellij.ide.projectView.ProjectView
 import com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode
 import com.intellij.ide.projectView.impl.nodes.PsiFileNode
@@ -22,9 +24,12 @@ import javax.swing.Icon
 class SvirtualCreateFromTemplateActionReplacer : CreateFromTemplateActionReplacer {
 
     override fun replaceCreateFromFileTemplateAction(fileTemplate: FileTemplate?): AnAction {
-        val filename = (fileTemplate?.name + "." + fileTemplate?.extension)
-        val icon = SvirtualFile.generateIcon(filename) ?: Icons.Svelte
-        return CreateSvelteKitFileAction(fileTemplate, filename, icon)
+        if (fileTemplate is BundledFileTemplate && fileTemplate.pluginDescriptor.pluginId.idString == "net.prestalife.svirtual") {
+            val filename = (fileTemplate.name + "." + fileTemplate.extension)
+            val icon = SvirtualFile.generateIcon(filename) ?: Icons.Svelte
+            return CreateSvelteKitFileAction(fileTemplate, filename, icon)
+        }
+        return CreateFromTemplateAction(fileTemplate!!)
     }
 
     class CreateSvelteKitFileAction(
