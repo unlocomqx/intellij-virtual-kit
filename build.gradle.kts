@@ -1,8 +1,5 @@
-import org.apache.tools.ant.taskdefs.cvslib.ChangeLogTask
 import org.jetbrains.changelog.Changelog
-import org.jetbrains.changelog.ChangelogSectionUrlBuilder
 import org.jetbrains.changelog.date
-import org.jetbrains.intellij.debug
 
 fun properties(key: String) = project.findProperty(key).toString()
 
