@@ -41,23 +41,23 @@ class SvirtualFile {
                 return name.replace("+error", "$route.error")
             }
 
-            if (name.matches(Regex("\\+page\\.server\\.(ts|js)"))) {
+            if (name.matches(Regex("\\+page\\.server\\.(.*)"))) {
                 return "$route.server.$extension"
             }
 
-            if (name.matches(Regex("\\+page\\.(ts|js)"))) {
+            if (name.matches(Regex("\\+page\\.(.*)"))) {
                 return "$route.$extension"
             }
 
-            if (name.matches(Regex("\\+server\\.(ts|js)"))) {
+            if (name.matches(Regex("\\+server\\.(.*)"))) {
                 return "$route.endpoint.$extension"
             }
 
-            if (name.matches(Regex("\\+layout\\.server\\.(ts|js)"))) {
+            if (name.matches(Regex("\\+layout\\.server\\.(.*)"))) {
                 return "$route.layout.server.$extension"
             }
 
-            if (name.matches(Regex("\\+layout\\.(ts|js)"))) {
+            if (name.matches(Regex("\\+layout\\.(.*)"))) {
                 return "$route.layout.$extension"
             }
 
