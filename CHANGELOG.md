@@ -6,19 +6,11 @@ Change the displayed names of SvelteKit files for easier navigation and route id
 - Similar files are nested under a common parent
 - Tabs labels are modified to reflect their corresponding route
 
-## [Unreleased]
+## (1.6.1) - 2025-09-05
 
 ### Added
 
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
+- Handle any file extension given that the filename starts with +page or +server and so on.
 
 ## (1.5.1) - 2024-02-01
 
