@@ -13,7 +13,7 @@ import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.application.ApplicationManager
-import com.intellij.openapi.fileEditor.FileEditorManager
+import com.intellij.openapi.fileEditor.OpenFileDescriptor
 import com.intellij.openapi.ui.Messages
 import com.intellij.psi.PsiFile
 import com.intellij.psi.PsiManager
@@ -97,7 +97,7 @@ class SvirtualCreateFromTemplateActionReplacer : CreateFromTemplateActionReplace
                         fileTemplate, fileName, null, targetPsiDir
                     )
                     if ((psiFile as PsiFile).virtualFile != null) {
-                        FileEditorManager.getInstance(project).openFile(psiFile.virtualFile, true)
+                        OpenFileDescriptor(project, psiFile.virtualFile).navigate(true)
                         ProjectView.getInstance(project).select(psiFile, psiFile.virtualFile, true)
                     }
                 }

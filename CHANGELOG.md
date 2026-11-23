@@ -6,6 +6,12 @@ Change the displayed names of SvelteKit files for easier navigation and route id
 - Similar files are nested under a common parent
 - Tabs labels are modified to reflect their corresponding route
 
+## (1.6.3) - 2026-11-23
+
+### Fixed
+
+- Compatibility with 2026.3: removed a deprecated API usage when opening a newly created file.
+
 ## (1.6.1) - 2025-09-05
 
 ### Added
